@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Salsa|Manrope');
+
+:root{
+    --primary-color: #BFCC94; /*Olive */
+    --secondary-color: #344966; /*Navy */
+    --accent1-color: #B4CDED; /*Light Blue*/
+    --accent2-color: #F0F4EF; /*Light */
+
+    --heading-font: "Salsa";
+    --paragraph-font: Manrope, sans-serif;
+}
+
+html {
+    background-color: var(--primary-color);
+}
+
+.title {
+    padding: 1em;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    display: block;
+    border-radius: 20px;
+}
+
+body a:link, body a:visited {
+    color: #4EB09B;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+header, footer {
+    text-align: center;
+    color: var(--primary-color);
+    padding: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 15px;   
+}
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+}
+
+img {
+    float: right;
+    margin: 0.75em;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0.75em;
+}
+
+#updated {
+    color: yellow;
+    font-size: 12px;
+}
