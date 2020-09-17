@@ -6,8 +6,8 @@
     --accent1-color: #B4CDED; /*Light Blue*/
     --accent2-color: #F0F4EF; /*Light */
 
-    --heading-font: "Salsa";
-    --paragraph-font: Manrope, sans-serif;
+    --heading-font: 'Salsa', cursive;
+    --paragraph-font: 'Manrope', sans-serif;
 }
 
 html {
