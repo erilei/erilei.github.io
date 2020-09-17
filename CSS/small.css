@@ -31,12 +31,15 @@ body a:link, body a:visited {
     color: #4EB09B;
 }
 
-h1, h2 {
+h1 {
     font-family: var(--heading-font);
+    font-size: 2rem;
 }
 
 h2 {
+    font-family: var(--heading-font);
     color: var(--secondary-color);
+    font-size: 1rem;
 }
 
 header, footer {
@@ -44,17 +47,14 @@ header, footer {
     color: var(--primary-color);
     padding: 1em;
     background-color: var(--secondary-color);
-    border-radius: 15px;   
+
 }
 footer a:link, footer a:visited {
     color: var(--accent1-color);
 }
 
 img {
-    float: right;
     margin: 0.75em;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 0.75em;
 }
 
 #updated {
