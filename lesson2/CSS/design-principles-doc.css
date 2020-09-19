@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Salsa|Manrope');
+
+:root{
+    --primary-color: #BFCC94; /*Olive */
+    --secondary-color: #344966; /*Navy */
+    --accent1-color: #B4CDED; /*Light Blue*/
+    --accent2-color: #F0F4EF; /*Light */
+
+    --heading-font: 'Salsa', cursive;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+
+html {
+    background-color: var(--primary-color);
+}
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+.name {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+p {
+    font-family: var(--paragraph-font);
+}
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+header, footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1em;
+
+}
+footer {
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+}
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+}
+main {
+    
+    background-color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+
+}
+section {
+    padding: .5em;
+    border: 5px solid var(--accent1-color);
+    font-family: var(--paragraph-font);
+    max-width: 100%;
+}
+
+#updated {
+    color: yellow;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 32.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 2fr; 
+    }
+    .first {
+        grid-row: 1;
+        grid-column: 1;
+    } 
+    .second {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .third {
+        grid-row: 2;
+        grid-column: 1 / 3;
+
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .first {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .second {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .third {
+        grid-row: 1;
+        grid-column: 3;
+    }
+}
