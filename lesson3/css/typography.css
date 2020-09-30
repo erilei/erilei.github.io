@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Manrope');
+
+:root{
+    --primary-color: #083d77; /*Navy */
+    --secondary-color: #e3d87e; /*Light lime*/
+    --accent1-color: #DDF4F9; /*Light navy */
+    --accent2-color: #3b1734; /*Purple */
+
+    --background-color: #8bb6e5;
+
+    --heading-font: 'Questrial', sans-serif;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+html {
+    background-color: var(--background-color);
+}
+body {
+    
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+    max-width: 80%;
+}
+main{
+    padding: 1em;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+
+}
+table, th, td {
+    border: 1px solid black;
+}
+td {
+    height: 50px;
+    text-align: center;
+}
+p {
+    font-family: var(--paragraph-font)
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color); 
+}
+header h1{
+    color: var(--secondary-color);
+}
+header h2{
+    color: var(--secondary-color);
+}
+header, footer {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding: 1em;
+
+}
+footer {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+.site{
+    color: var(--accent1-color);
+}
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+}
+nav {
+  
+    font-family: var(--heading-font);
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 30px;
+  }
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    
+  }
+  nav a:link, nav a:visited {
+    color: var(--background-color);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+  }
+#updated {
+    color: yellow;
+    font-size: 12px;
+}
+#headerSample {
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}
+#navSample {
+    color: var(--background-color);
+    background-color: var(--accent2-color);
+    font-size: 20px;
+}
+#footNav{
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+}
