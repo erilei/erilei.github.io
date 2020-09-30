@@ -25,7 +25,7 @@ main{
 }
 table{
     border-collapse: collapse;
-    width: 60%;
+    width: 100%;
     font-family: var(--paragraph-font);
 }
 table, th, td {
@@ -108,3 +108,11 @@ nav a:hover {
     color: var(--accent1-color);
     background-color: var(--accent2-color);
 }
+
+
+.priority1{
+    display: none;
+}
+@media only screen and (min-width: 60em) {
+    .priority1{display: table-cell;}
+}    
