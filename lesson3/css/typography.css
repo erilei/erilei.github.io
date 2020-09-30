@@ -2,11 +2,10 @@
 
 :root{
     --primary-color: #083d77; /*Navy */
-    --secondary-color: #e3d87e; /*Light lime*/
-    --accent1-color: #DDF4F9; /*Light navy */
-    --accent2-color: #3b1734; /*Purple */
-
-    --background-color: #8bb6e5;
+    --secondary-color: #041e39; /*Light lime*/
+    --accent1-color: #eef9fc; /*Light navy */
+    --accent2-color: #2d8cf0; /*Purple */
+    --background-color: #DDF4F9;
 
     --heading-font: 'Questrial', sans-serif;
     --paragraph-font: 'Manrope', sans-serif;
@@ -15,11 +14,11 @@ html {
     background-color: var(--background-color);
 }
 body {
-    
     margin: 0 auto;
     background-color: var(--accent1-color);
     max-width: 80%;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 main{
     padding: 1em;
@@ -27,7 +26,7 @@ main{
 table{
     border-collapse: collapse;
     width: 60%;
-
+    font-family: var(--paragraph-font);
 }
 table, th, td {
     border: 1px solid black;
@@ -71,24 +70,25 @@ footer a:link, footer a:visited {
     color: var(--accent1-color);
 }
 nav {
-  
     font-family: var(--heading-font);
     color: var(--background-color);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
   }
 nav ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-    
+    background: var(--secondary-color);
+    padding: 2em;
+    border-radius: 10px;
   }
-  nav a:link, nav a:visited {
+nav a:link, nav a:visited {
     color: var(--background-color);
-  }
-  nav a:hover {
-    color: var(--secondary-color);
-  }
+}
+nav a:hover {
+    color: var(--accent2-color);
+}
 #updated {
     color: yellow;
     font-size: 12px;
