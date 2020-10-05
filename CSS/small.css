@@ -49,6 +49,7 @@ header, footer {
     background-color: var(--secondary-color);
 
 }
+
 footer a:link, footer a:visited {
     color: var(--accent1-color);
 }

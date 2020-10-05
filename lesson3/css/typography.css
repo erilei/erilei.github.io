@@ -82,7 +82,6 @@ nav ul {
     background: var(--secondary-color);
     padding: 2em;
     border-radius: 10px;
-
   }
 nav a:link, nav a:visited {
     color: var(--background-color);

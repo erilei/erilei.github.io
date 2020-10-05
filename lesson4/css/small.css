@@ -1,0 +1,152 @@
+:root{
+    --primary-color: #083d77;
+    --secondary-color: #041e39;
+    --accent1-color: #eef9fc;
+    --accent2-color: #2d8cf0;
+    --background-color: #DDF4F9;
+    --current-color: #53A1F3; /*light blue*/
+    --lightback-color: #d9eafd;
+
+    --heading-font: 'Questrial', sans-serif;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    background-color: var(--background-color);
+}
+
+body {
+    background-color: var(--accent1-color);
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+main {
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+}
+h2 {
+    font-size: 14px;
+}
+
+br.responsive{
+    display: inline;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 75%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+}
+
+.heading h1 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    margin: 0 0 0 17px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.content {
+    font-family: var(--paragraph-font);
+    border: 1px dashed var(--primary-color);
+    padding: .6rem;
+    margin: 1.6rem;
+    background-color: var(--lightback-color);
+}
+
+.moto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+}
+
+nav ul li a:hover{background-color: black;}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a{background-color: var(--current-color); color: var(--background-color);}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav button {
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+nav {
+    font-family: var(--heading-font);
+    color: var(--background-color);
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    background: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+}
+
+nav a:link, nav a:visited {
+    color: var(--background-color);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+footer {
+    font-family: var(--paragraph-font);
+}
+
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
