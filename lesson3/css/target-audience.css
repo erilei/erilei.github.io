@@ -46,6 +46,10 @@ h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color); 
 }
+h4.site {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
 header h1{
     color: var(--secondary-color);
     font-size: 45px;
