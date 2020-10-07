@@ -105,8 +105,7 @@ nav a:hover {
     font-size: 20px;
 }
 #footNav{
-    color: white;
-    background-color: var(--accent2-color);
+    color: olive;
 }
 
 
