@@ -92,7 +92,7 @@ nav a:hover {
     color: var(--accent2-color);
 }
 #updated {
-    color: yellow;
+    color: purple;
     font-size: 12px;
 }
 #headerSample {
