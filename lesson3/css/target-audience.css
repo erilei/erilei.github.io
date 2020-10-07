@@ -74,9 +74,7 @@ li{
 }
 nav {
     font-family: var(--heading-font);
-    color: var(--background-color);
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 nav ul {
     list-style: none;
@@ -96,4 +94,15 @@ nav a:hover {
 #updated {
     color: yellow;
     font-size: 12px;
+}
+
+@media only screen and (min-width: 35em) {
+    nav ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 60em) {
+    nav ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

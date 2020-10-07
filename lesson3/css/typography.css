@@ -71,9 +71,7 @@ footer a:link, footer a:visited {
 }
 nav {
     font-family: var(--heading-font);
-    color: var(--background-color);
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
   }
 nav ul {
     list-style: none;
@@ -112,6 +110,15 @@ nav a:hover {
 .priority1{
     display: none;
 }
+
+@media only screen and (min-width: 35em) {
+    nav ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media only screen and (min-width: 60em) {
     .priority1{display: table-cell;}
+    nav ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }    
