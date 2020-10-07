@@ -69,8 +69,6 @@ footer a:link, footer a:visited {
 main {
     background-color: var(--accent1-color);
     display: grid;
-    grid-template-columns: 1fr;
-    padding: 1em;
 }
 section {
     padding: 1em;
@@ -103,9 +101,7 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 35em) {
-    main {
-        grid-template-columns: 1fr; 
-    }
+
     .first {
         grid-row: 1;
         grid-column: 1;

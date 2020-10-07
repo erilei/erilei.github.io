@@ -80,11 +80,7 @@ nav a:hover {
     color: yellow;
     font-size: 12px;
 }
-@media only screen and (min-width: 35em) {
-    nav ul{
-        grid-template-columns: 1fr 1fr;
-    }
-}
+
 @media only screen and (min-width: 60em) {
     nav ul{
         grid-template-columns: 1fr 1fr 1fr 1fr;

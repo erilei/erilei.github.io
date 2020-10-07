@@ -76,7 +76,6 @@ nav {
 nav ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
     background: var(--secondary-color);
     padding: 2em;
     border-radius: 10px;
@@ -111,11 +110,7 @@ nav a:hover {
     display: none;
 }
 
-@media only screen and (min-width: 35em) {
-    nav ul{
-        grid-template-columns: 1fr 1fr;
-    }
-}
+
 @media only screen and (min-width: 60em) {
     .priority1{display: table-cell;}
     nav ul{
