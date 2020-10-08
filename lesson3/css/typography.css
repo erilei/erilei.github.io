@@ -71,7 +71,7 @@ footer {
     color: var(--accent1-color);
 }
 footer a:link, footer a:visited {
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 nav {
     font-family: var(--heading-font);
@@ -92,7 +92,7 @@ nav a:hover {
     color: var(--accent2-color);
 }
 #updated {
-    color: pink;
+    color: (var(--primary-color);
     font-size: 12px;
 }
 #headerSample {
