@@ -1,11 +1,9 @@
 :root{
-    --primary-color: #083d77;
-    --secondary-color: #041e39;
-    --accent1-color: #eef9fc;
-    --accent2-color: #2d8cf0;
-    --background-color: #DDF4F9;
-    --current-color: #53A1F3; /*light blue*/
-    --lightback-color: #d9eafd;
+    --primary-color: #5e5e5e; /*Navy */
+    --secondary-color: #333333; /*Light lime*/
+    --accent1-color: #Fcfaf9; /*Light navy */
+    --accent2-color: #abd8bc; /*Purple */
+    --background-color: #f3d3bd;
 
     --heading-font: 'Questrial', sans-serif;
     --paragraph-font: 'Manrope', sans-serif;
@@ -97,7 +95,7 @@ nav ul li a:hover{background-color: black;}
 
 nav ul.hide {display: none;}
 
-nav ul li.active a{background-color: var(--current-color); color: var(--background-color);}
+nav ul li.active a{background-color: var(--accent1-color); color: var(--primary-color);}
 
 nav ul li a {
     display: block;
@@ -119,6 +117,7 @@ nav {
     font-family: var(--heading-font);
     color: var(--background-color);
     font-size: 20px;
+    line-height: 35px;
 }
 
 nav ul {
