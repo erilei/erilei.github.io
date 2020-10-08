@@ -83,7 +83,6 @@ nav {
 nav ul {
     list-style: none;
     display: grid;
-
     background: var(--secondary-color);
     padding: 2em;
     border-radius: 10px;
@@ -93,7 +92,7 @@ nav a:link, nav a:visited {
     text-decoration: none;
 }
 nav a:hover {
-    color: var(--accent2-color);
+    background-color: var(--accent2-color);
 }
 #updated {
     color: yellow;
