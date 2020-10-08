@@ -92,8 +92,8 @@ nav a:hover {
     background-color: var(--accent2-color);
 }
 #updated {
-    color: brown;
-    font-size: 12px;
+    color: var(--accent1-color);
+    font-weight: bold;
 }
 #headerSample {
     color: var(--secondary-color);
@@ -105,7 +105,8 @@ nav a:hover {
     font-size: 20px;
 }
 #footNav{
-    color: var(--secondary-color);
+    color: var(--accent1-color);
+    font-weight: bold;
 }
 
 
