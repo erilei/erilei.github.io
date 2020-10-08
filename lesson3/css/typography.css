@@ -89,10 +89,10 @@ nav a:link, nav a:visited {
     text-decoration: none;
 }
 nav a:hover {
-    background-color: var(--accent2-color);
+    color: var(--accent2-color);
 }
 #updated {
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 #headerSample {
     color: var(--secondary-color);
@@ -107,7 +107,7 @@ nav a:hover {
     color: var(--primary-color);
 }
 a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 
