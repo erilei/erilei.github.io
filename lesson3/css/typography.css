@@ -71,7 +71,7 @@ footer {
     color: var(--accent1-color);
 }
 footer a:link, footer a:visited {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 nav {
     font-family: var(--heading-font);
@@ -106,9 +106,7 @@ nav a:hover {
 #footNav{
     color: var(--primary-color);
 }
-a {
-    color: var(--secondary-color);
-}
+
 
 
 .priority1{
