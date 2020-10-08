@@ -59,7 +59,7 @@ footer {
     color: var(--accent1-color);
 }
 footer a:link, footer a:visited {
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 nav {
     font-family: var(--heading-font);
@@ -81,8 +81,7 @@ nav a:hover {
     color: var(--accent2-color);
 }
 #updated {
-    color: yellow;
-    font-size: 12px;
+    color: var(--secondary-color);
 }
 
 @media only screen and (min-width: 60em) {
