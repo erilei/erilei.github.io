@@ -138,6 +138,7 @@ nav a:hover {
 
 footer {
     font-family: var(--paragraph-font);
+    max-width: 900px auto;
 }
 
 footer a:link, footer a:visited {
