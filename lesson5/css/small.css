@@ -144,3 +144,24 @@ footer a:link, footer a:visited {
     clear: both;
 }
 
+
+main h2 {
+    color: black;
+}
+main p {
+    font-family: var(--paragraph-font);
+    color: black;
+}
+.hero-div {
+    position: relative;
+}
+.weather-overlay {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    padding: .5em;
+    background: radial-gradient(#f1f9f4, #81c59b);
+    border: 1px solid var(--accent2-color);
+    box-shadow: 0 0 30px black;
+    opacity: .8;
+}
