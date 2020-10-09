@@ -41,5 +41,7 @@
     .heading {
         font-size: .8em;
     }
-
+    main {
+        width: 100%;
+    }
 }
