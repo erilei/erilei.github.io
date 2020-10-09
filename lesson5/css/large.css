@@ -25,6 +25,10 @@
     br.responsive {
         display: none;
     }
+    main, footer{
+        width: 900px;
+        margin: 0 auto;
+    }
 
     .heading {
         font-size: 100%;
@@ -36,4 +40,5 @@
     h2 {
         font-size: 20px;
     }
+
 }

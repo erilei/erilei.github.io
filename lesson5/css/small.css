@@ -15,19 +15,17 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html {
+html, body {
     background-color: var(--background-color);
 }
 
-body {
-    background-color: var(--accent1-color);
-    margin: 0 auto;
-}
+
 
 main {
     padding: 1em;
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto;
+    background-color: var(--accent1-color);
 }
 
 header, footer {
@@ -35,7 +33,6 @@ header, footer {
     text-align: center;
     padding-bottom: 1em;
     padding-top: 1em;
-    padding-right: 1em;
 }
 h2 {
     font-size: 14px;
@@ -105,7 +102,6 @@ nav ul li a {
 }
 
 nav button {
-    margin: 0 auto;
     background-color: transparent;
     border: none;
     font-size: 1.3rem;
@@ -114,7 +110,6 @@ nav button {
 
 nav {
     font-family: var(--heading-font);
-    color: var(--background-color);
     font-size: 20px;
     line-height: 35px;
 }
@@ -135,9 +130,10 @@ nav a:hover {
     color: var(--accent2-color);
 }
 
+
 footer {
     font-family: var(--paragraph-font);
-    max-width: 900px auto;
+
 }
 
 footer a:link, footer a:visited {
