@@ -23,8 +23,6 @@ html, body {
 
 main {
     padding: 1em;
-    max-width: 900px;
-    margin: auto;
     background-color: var(--accent1-color);
 }
 
