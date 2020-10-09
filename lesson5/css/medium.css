@@ -1,9 +1,10 @@
-@media only screen and (min-width: 60em) {
-
+@media only screen and (min-width: 46em) {
+    
     nav {
         background: var(--primary-color); /* Old browsers */
         
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */    
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+        
     }
         
     nav button {display: none;}
@@ -14,7 +15,7 @@
         
     nav ul li{
         display:inline;
-   }
+    }
         
     nav ul li a {
         border: none;
@@ -25,20 +26,19 @@
     br.responsive {
         display: none;
     }
-    main, footer{
-        width: 900px;
-        margin: 0 auto;
+
+    header img {
+        width: 87%;
+    }
+    h2 {
+        font-size: 15px;
+    }
+
+    .moto {
+        font-size: 1em;
     }
 
     .heading {
-        font-size: 100%;
+        font-size: .8em;
     }
-
-    header img {
-        width: 100%;
-    }
-    h2 {
-        font-size: 20px;
-    }
-
 }
