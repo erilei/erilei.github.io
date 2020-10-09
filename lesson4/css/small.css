@@ -22,7 +22,6 @@ html {
 body {
     background-color: var(--accent1-color);
     margin: 0 auto;
-    border-radius: 30px;
 }
 
 main {
