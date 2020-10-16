@@ -212,7 +212,8 @@ main p, section, article{
 }
 #pancake {
     display: none;
+    font-size: 1.2em;
     margin: 5px;
-    padding: 1px;
+    padding: 3px;
     font-family: var(--paragraph-font);
 }

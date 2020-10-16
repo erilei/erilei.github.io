@@ -17,9 +17,8 @@ function toggleMenu() {
 }
 
 function displayPancake () {
-    var dayOfweek = new Date.getDay();
-    if (dayOfWeek == 5){
-        document.getElementById("pancake").style.display = "block";
+    var dayOfweek = new Date;
+    if (dayOfWeek.getDay() == 5){
+        document.querySelector("#pancake").style.display = "block";
     }
-    
 }
