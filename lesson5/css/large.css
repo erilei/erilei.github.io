@@ -20,6 +20,7 @@
         border: none;
         padding: .6rem 1rem;
         display: inline-block;
+        font-size: 20px;
     }
 
     br.responsive {
@@ -34,9 +35,6 @@
         font-size: 100%;
     }
 
-    header img {
-        width: 100%;
-    }
     h2 {
         font-size: 20px;
     }

@@ -16,13 +16,14 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 html, body {
-    background-color: var(--background-color);
+    background-color: var(--accent2-color);
+}
+.town{
+    padding: 1em;
 }
 
-
-
 main {
-    padding: 1em;
+
     background-color: var(--accent1-color);
 }
 
@@ -68,13 +69,7 @@ h2 {
     text-align: center;
 }
 
-.content {
-    font-family: var(--paragraph-font);
-    border: 1px dashed var(--primary-color);
-    padding: .6rem;
-    margin: 1.6rem;
-    background-color: var(--lightback-color);
-}
+
 
 .moto {
     font-style: italic;
@@ -131,7 +126,6 @@ nav a:hover {
 
 footer {
     font-family: var(--paragraph-font);
-
 }
 
 footer a:link, footer a:visited {
@@ -143,25 +137,82 @@ footer a:link, footer a:visited {
     display: table;
     clear: both;
 }
-
-
-main h2 {
-    color: black;
+.fiveDay {
+    display: none;
 }
-main p {
-    font-family: var(--paragraph-font);
+.weather-overlay h2 {
     color: black;
+    margin: 0;
+    text-decoration: underline;
+}
+main p, section, article{
+    font-family: var(--paragraph-font);
+    margin: 0;
+}
+
+.banner-image {
+    width: 85%;
 }
 .hero-div {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .weather-overlay {
     position: absolute;
-    top: 2em;
-    left: 2em;
+    justify-self: left;
+    top: .5em;
+    left: 3.5em;
     padding: .5em;
     background: radial-gradient(#f1f9f4, #81c59b);
     border: 1px solid var(--accent2-color);
     box-shadow: 0 0 30px black;
     opacity: .8;
+}
+.right {
+    text-align: right;
+}
+.value {
+    color: #0d1c13;
+    font-weight: bold;
+}
+.weather-overlay table th, td {
+    font-size: 14px;
+}
+
+.article {
+    border: 1px solid var(--accent2-color);
+    background-color: #e3f2e9;
+    padding: .5em;
+}
+.author {
+    font-size: 12px;
+}
+.foundersDay {
+    width: 65%;
+    box-shadow: 0px 0px 10px black;
+    margin: 10px auto 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paragraph {
+    font-size: 14px;
+}
+.contact {
+    background-color: #e3f2e9;
+}
+.map {
+    display: none;
+}
+.location {
+    font-size: 12px;
+    text-align: center;
+    padding: .5em;
+}
+#pancake {
+    display: none;
+    margin: 5px;
+    padding: 1px;
+    font-family: var(--paragraph-font);
 }

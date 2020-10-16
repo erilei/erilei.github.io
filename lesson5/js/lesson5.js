@@ -15,3 +15,11 @@ function toggleMenu() {
     
     document.getElementById("primaryNav").classList.toggle("hide");
 }
+
+function displayPancake () {
+    var dayOfweek = new Date.getDay();
+    if (dayOfWeek == 5){
+        document.getElementById("pancake").style.display = "block";
+    }
+    
+}

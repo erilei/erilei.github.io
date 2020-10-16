@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Questrial&display=swap" rel="stylesheet">
-    <script src="js/lesson4.js"></script>
+    <script src="js/lesson5.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Preston, Idaho</title>
     <meta name="description" content="Weather page for Preston, Idaho. Class: WDD230 at BYU-Idaho.">
     <link rel="shortcut icon" href="images/favicon.ico">
 
 </head>
 <body>
+    <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
     <header>
         <picture>
             <img src="images/weather-picresize.png" alt="climate compound logo">
@@ -38,19 +40,79 @@
             </ul>
         </nav>
     <main>
-        <h2>Preston Idaho</h2>
+        <h2 class="town">Preston Idaho</h2>
         <div class="hero-div">
             <img src="images/main-placeholder.jpg" alt="banner image" class="banner-image">
             <section class="weather-overlay">
-                <h2>Weather Summary</h2>
-                <p>Label: value</p>
-                <p>Label: value</p>
-                <p>Label: value</p>
+                <h2>Weather Summary</h2><br>
+                <table class="currentSum">
+                    <tr>
+                        <td class="right">Currently</td><td>:</td><td class="value">Sunny</td>
+                    </tr>
+                    <tr>
+                        <td class="right">High</td><td>:</td><td class="value"> 76 &#176;F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Chill</td><td>:</td><td class="value">&#176;F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Humidity</td><td>:</td><td class="value">69%</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Speed</td><td>:</td><td class="value">5 mph</td>
+                    </tr>
+                </table>
             </section>
         </div>
-        <div class="content">5 day forcast</div>
-        <div class="content">Article</div>
-        <div class="content">Contact Information</div>
+        <br>
+        <section class="fiveDay"><strong>5 day forcast</strong><br><br>
+        <table>
+            <tr>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td><i style="font-size:17px;color:orange" class="fa">&#xf185;</i><br>89 &#176;F</td>
+                <td><i style="font-size:17px;color:orange" class="fa">&#xf185;</i><br>87 &#176;F</td>
+                <td><i style="font-size:17px;color:orange" class="fa">&#xf185;</i><br>78 &#176;F</td>
+                <td><i style="font-size:17px;color:orange" class="fa">&#xf185;</i><br>75 &#176;F</td>
+                <td><i style="font-size:17px;color:orange" class="fa">&#xf185;</i><br>72 &#176;F</td>
+            </tr>
+        </table></section>
+        <br>
+        <article class="article">
+            <br>
+            <img src="images/foundersDay.jpg" alt="Founders day image" class="foundersDay">
+            <br>
+            Founders Day Fresco
+            <br>
+            <br>
+            <p class="author">By Jamica Juarez</p>
+                <br>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </p>
+                <br>
+        </article>
+        <br>
+        <section class="contact">
+            <br>
+            <img src="images/map.jpg" alt="map of places" class="map">
+            <p class="location"><strong>Climate Compound</strong><br>
+            <i style='font-size:14px' class='fas'>&#xf3c5;</i>   30 N 1st East<br>
+            Preston, ID 83263
+            <br><br>
+            <i style='font-size:14px' class='fas'>&#xf095;</i>999.999.9999<br>
+            <br<br>
+            <i style="font-size:14px" class="fa">&#xf0e0;</i>    climatecompound@ttr.com<br>
+            <br><br>
+            <img src="images/instagram.png" alt="instagram">
+            <img src="images/youtube.png" alt="youtube">
+            <img src="images/facebook.png" alt="facebook">
+        </section>
     </main>
     <footer>
         <div class="lastInfo">
