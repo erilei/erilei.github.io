@@ -41,9 +41,7 @@
     .fiveDay table, th, td {
         padding: 1em;
     }
-    .fiveDay {
-        font-family: var(--paragraph-font);
-    }
+
     .weather-overlay {
         left: 5em;
     }

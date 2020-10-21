@@ -193,6 +193,9 @@ main p, section, article{
 th {
     background-color: #e3f2e9;
 }
+.fiveDay {
+    font-family: var(--paragraph-font);
+}
 
 .article {
     border: 1px solid var(--accent2-color);
