@@ -50,11 +50,19 @@
 
             <section class="weather-overlay">
                 <h2>Weather Summary</h2>
-                Currently: Rainy<br>
-                High: 64 &#176;F<br>
-                Wind chill: 58 &#176;F<br>
-                Humidity: 95%<br>
-                Wind Speed: 12 mph
+                <span>Currently: </span>
+                <span class="colweight">Raining</span>
+                <span>High</span>
+                <span class="colweight">
+                    <span class="temp">54</span> &#176;F</span>
+                <span>Wind Chill: </span>
+                <span class="colweight">N/A</span>
+                <span>Humidity: </span>
+                <span class="colweight">95%</span>
+                <span>Wind Speed: </span>
+                <span class="colweight">
+                    <span class="wind-speed">12</span> mph</span>
+
             </section>
         </div>
         <br>
@@ -116,9 +124,11 @@
                 <div id="updated"></div>
         </div>
     </footer>
-    <script src="js/lesson6.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
+    <script src="js/lesson6.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 </body>
 </html>

@@ -167,9 +167,15 @@ main p, section, article{
     box-shadow: 0 0 30px black;
     opacity: .8;
 }
-.weather-overlay table th, td {
-    font-size: 14px;
+.colweight {
+    color: black;
+    font-weight: bold;
 }
+    .colweight::after{
+        content: "\A";
+        white-space: pre;
+    }
+
 
 .fiveDay {
     display: block;
