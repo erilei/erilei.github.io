@@ -18,8 +18,10 @@
 <body>
     <div id="pancake" style="display: block;">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
     <header>
-        <picture>
-            <img src="images/weather-picresize.png" alt="climate compound logo">
+        <picture class="logoimg">
+            <source media="(max-width: 200px)" srcset="images/logo83.png">
+            <source media="(max-width: 800px)" srcset="images/logo111.png">
+            <img src="images/logo128.png" alt="logo">
         </picture>
             <section class="heading">
             <h1>Climate Compound</h1>
@@ -42,26 +44,20 @@
     <main>
         <h2 class="town">Preston Idaho</h2>
         <div class="hero-div">
-            <img src="images/main-placeholder.jpg" alt="banner image" class="banner-image">
+            <picture class="bannerimg">
+                <source media="(max-width: 640px)" srcset="images/herosm307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/heromd614x298.jpg">
+                <img src="images/herolg880x428.jpg" alt="hero banner image">
+                
+            </picture>
+
             <section class="weather-overlay">
-                <h2>Weather Summary</h2><br>
-                <table class="currentSum">
-                    <tr>
-                        <td class="right">Currently</td><td>:</td><td class="value">Sunny</td>
-                    </tr>
-                    <tr>
-                        <td class="right">High</td><td>:</td><td class="value"> 76 &#176;F</td>
-                    </tr>
-                    <tr>
-                        <td class="right">Wind Chill</td><td>:</td><td class="value">&#176;F</td>
-                    </tr>
-                    <tr>
-                        <td class="right">Humidity</td><td>:</td><td class="value">69%</td>
-                    </tr>
-                    <tr>
-                        <td class="right">Wind Speed</td><td>:</td><td class="value">5 mph</td>
-                    </tr>
-                </table>
+                <h2>Weather Summary</h2>
+                Currently: Rainy<br>
+                High: 64 &#176;F<br>
+                Wind chill: 58 &#176;F<br>
+                Humidity: 95%<br>
+                Wind Speed: 12 mph
             </section>
         </div>
         <br>
@@ -85,10 +81,14 @@
         <br>
         <article class="article">
             <br>
-            <img src="images/foundersDay.jpg" alt="Founders day image" class="foundersDay">
-            <br>
-            <h2>Founders Day Fresco</h2>
-            <br>
+            <picture class="articleimg">
+                <source media="(max-width: 640px)" srcset="images/parksm195x130.jpg">
+                <source media="(max-width: 961px)" srcset="images/parkmd390x260.jpg">
+                <img src="images/parklg440x293.jpg" alt="article image">
+                
+            </picture>
+            
+            <h2>Founders Day Fresco<h2>
             <br>
             <p class="author">By Jamica Juarez</p>
                 <br>
@@ -101,7 +101,7 @@
             <br>
             <img src="images/map.jpg" alt="map of places" class="map">
             <p class="location"><strong>Climate Compound</strong><br>
-            <i style='font-size:14px' class='fas'>&#xf3c5;</i>   30 N 1st East<br>
+            <i style='font-size:14px' class='fas'>&#xf3c5;</i>30 N 1st East<br>
             Preston, ID 83263
             <br><br>
             <i style='font-size:14px' class='fas'>&#xf095;</i> 999.999.9999
@@ -111,7 +111,6 @@
             <img src="images/instagram.png" alt="instagram">
             <img src="images/youtube.png" alt="youtube">
             <img src="images/facebook.png" alt="facebook">
-            </p>
         </div>
     </main>
     <footer>
@@ -120,6 +119,6 @@
                 <div id="updated"></div>
         </div>
     </footer>
-    <script src="js/lesson5.js"></script>
+    <script src="js/lesson6.js"></script>
 </body>
 </html>

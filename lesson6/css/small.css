@@ -47,8 +47,8 @@ header {
     justify-content: center;
 }
 
-header img {
-    width: 75%;
+.fiveDay {
+    display: none;
 }
 
 .heading {
@@ -98,8 +98,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.3rem;
-    color: black;
-    font-weight: bold;
+    color: var(--primary-color);
 }
 
 nav {
@@ -138,9 +137,7 @@ footer a:link, footer a:visited {
     display: table;
     clear: both;
 }
-.fiveDay {
-    display: none;
-}
+
 .weather-overlay h2 {
     color: black;
     margin: 0;
@@ -150,6 +147,7 @@ main p, section, article{
     font-family: var(--paragraph-font);
     margin: 0;
 }
+
 
 .hero-div {
     position: relative;
@@ -167,15 +165,25 @@ main p, section, article{
     box-shadow: 0 0 30px black;
     opacity: .8;
 }
-.right {
-    text-align: right;
-}
-.value {
-    color: #0d1c13;
-    font-weight: bold;
-}
 .weather-overlay table th, td {
     font-size: 14px;
+}
+
+.fiveDay {
+    display: block;
+    text-align: center;
+}
+.fiveDay table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .5em;
+}
+.fiveDay table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    background-color: #e3f2e9;
 }
 
 .article {
@@ -186,8 +194,7 @@ main p, section, article{
 .author {
     font-size: 12px;
 }
-.foundersDay {
-    width: 65%;
+article picture.articleimg img{
     box-shadow: 0px 0px 10px black;
     margin: 10px auto 20px;
     display: block;
@@ -206,7 +213,7 @@ main p, section, article{
 .location {
     font-size: 12px;
     text-align: center;
-    padding: .5em;
+    padding: 1em;
 }
 #pancake {
     display: none;
@@ -214,7 +221,4 @@ main p, section, article{
     margin: 5px;
     padding: 3px;
     font-family: var(--paragraph-font);
-}
-div#pancake {
-    background-color: var(--background-color);
 }
