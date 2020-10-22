@@ -255,6 +255,18 @@ picture.social::before{
     content: "\A\A\A";
     white-space: pre;
 }
+span.address::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+span.address::after{
+    content: "\A\A";
+    white-space: pre;
+}
+span.phone::after{
+    content: "\A\A";
+    white-space: pre;
+}
 
 
 .map {
