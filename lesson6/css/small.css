@@ -16,11 +16,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 html, body {
     background-color: var(--accent2-color);
-}
-.town{
-    padding: 1em;
 }
 
 main {
@@ -34,64 +36,52 @@ header, footer {
     padding-bottom: 1em;
     padding-top: 1em;
 }
-h2 {
-    font-size: 14px;
+footer {
+    font-family: var(--paragraph-font);
 }
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+}
+
+/* -------header/footer items------- */
 
 br.responsive{
     display: inline;
 }
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact {
+    background-color: #e3f2e9;
 }
-
-.fiveDay {
+div.contact {
+    margin-top: 1em;
+}
+picture.social::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+span.address::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+span.address::after{
+    content: "\A\A";
+    white-space: pre;
+}
+span.phone::after{
+    content: "\A\A";
+    white-space: pre;
+}
+.map {
     display: none;
 }
-.bannerimg::after{
-    content: "\A";
-    white-space: pre;
-}
-.fiveDay::after{
-    content: "\A";
-    white-space: pre;
-}
-.paragrph::after{
-    content: "\A";
-    white-space: pre;
-}
-
-.heading {
-    display: flex;
-    flex-direction: column;
-    font-size: .7em;
-}
-
-.heading h1 {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
-    margin: 0 0 0 17px;
-}
-
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+.location {
+    font-size: 12px;
     text-align: center;
+    padding: 1em;
 }
 
 
 
-.moto {
-    font-style: italic;
-    letter-spacing: 1pt;
-    color: var(--secondary-color);
-    margin-left: 20px;
-    font-size: 1em;
-    font-family: var(--paragraph-font);
-}
+/* -----------nav------------ */
 
 nav ul li a:hover{background-color: black;}
 
@@ -139,30 +129,114 @@ nav a:hover {
 }
 
 
-footer {
-    font-family: var(--paragraph-font);
-}
 
-footer a:link, footer a:visited {
-    color: var(--accent1-color);
-}
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+/* ---------headings--------- */
 
+.town{
+    padding: 1em;
+}
+h2 {
+    font-size: 14px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    margin: 0 0 0 17px;
+}
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
 .weather-overlay h2 {
     color: black;
     margin: 0;
     text-decoration: underline;
 }
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+}
+.moto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+}
+
+
+
+/* --------table-------- */
+
+.fiveDay {
+    display: block;
+    text-align: center;
+}
+.fiveDay table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .5em;
+}
+.fiveDay table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    background-color: #e3f2e9;
+}
+.fiveDay {
+    font-family: var(--paragraph-font);
+}
+.fiveDay::after{
+    content: "\A";
+    white-space: pre;
+}
+
+
+/* --------article------- */
+
+.article {
+    border: 1px solid var(--accent2-color);
+    background-color: #e3f2e9;
+    padding: .5em;
+}
+.author {
+    font-size: 12px;
+    font-size: 14px;
+}
+.paragraph {
+    text-align: left;
+}
+article picture.articleimg img{
+    box-shadow: 0px 0px 10px black;
+    margin: 10px auto 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 main p, section, article{
     font-family: var(--paragraph-font);
     margin: 0;
 }
+.paragrph::after{
+    content: "\A";
+    white-space: pre;
+}
 
+
+
+
+
+/* --------overlay------- */
 
 .hero-div {
     position: relative;
@@ -188,95 +262,15 @@ main p, section, article{
         content: "\A";
         white-space: pre;
     }
-
-
-.fiveDay {
-    display: block;
-    text-align: center;
-}
-.fiveDay table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: .5em;
-}
-.fiveDay table {
-    margin-left: auto;
-    margin-right: auto;
-}
-th {
-    background-color: #e3f2e9;
-}
-.fiveDay {
-    font-family: var(--paragraph-font);
-}
-
-.article {
-    border: 1px solid var(--accent2-color);
-    background-color: #e3f2e9;
-    padding: .5em;
-}
-.author {
-    font-size: 12px;
-}
-.paragraph {
-    text-align: left;
-}
-article picture.articleimg img{
-    box-shadow: 0px 0px 10px black;
-    margin: 10px auto 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.paragraph {
-    font-size: 14px;
-}
-.contact {
-    background-color: #e3f2e9;
-}
-div.contact {
-    margin-top: 1em;
-}
-
-
-.fas::before{
-    content: "\A\A";
-    white-space: pre;
-}
-.fa::after{
-    content: "\A";
-    white-space: pre;
-}
-.fa::before{
-    content: "\A\A";
-    white-space: pre;
-}
-picture.social::before{
-    content: "\A\A\A";
-    white-space: pre;
-}
-span.address::before{
-    content: "\A\A\A";
-    white-space: pre;
-}
-span.address::after{
-    content: "\A\A";
-    white-space: pre;
-}
-span.phone::after{
+.bannerimg::after{
     content: "\A\A";
     white-space: pre;
 }
 
 
-.map {
-    display: none;
-}
-.location {
-    font-size: 12px;
-    text-align: center;
-    padding: 1em;
-}
+
+/* -------id-------- */
+
 #pancake {
     display: none;
     font-size: 1.2em;

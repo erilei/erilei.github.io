@@ -1,5 +1,13 @@
 @media only screen and (min-width: 40em) {
     
+
+    main {
+        padding: 1em;
+    }
+    html, body {
+        background-color: var(--background-color);
+    }
+    /* --------nav-------- */
     nav {
         background: var(--primary-color); /* Old browsers */
         
@@ -23,32 +31,11 @@
         display: inline-block;
         font-size: 15px;
     }
-    html, body {
-        background-color: var(--background-color);
-    }
-    main {
-        padding: 1em;
-    }
 
-    br.responsive {
-        display: none;
-    }
-    article picture.articleimg img {
-        float: right;
-        margin-right: .5em;
-        margin-left: .7em;
-    }
-    .fiveDay table, th, td {
-        padding: 1em;
-    }
 
-    .weather-overlay {
-        left: 15em;
-    }
-    .currentSum tr, .currentSum td{
-        border: none;
-        padding: 0;
-    }
+
+    /* ------headings------ */
+
     h2 {
         font-size: 15px;
     }
@@ -60,8 +47,14 @@
     .heading {
         font-size: .8em;
     }
-    main {
-        width: 100%;
+
+
+
+    /* -------header/footer items----- */
+
+
+    br.responsive {
+        display: none;
     }
     .contact {
         display: flex;
@@ -77,4 +70,21 @@
         align-self: center;
         margin-left: 4em;
     }
+
+
+
+    article picture.articleimg img {
+        float: right;
+        margin-right: .5em;
+        margin-left: .7em;
+    }
+    .fiveDay table, th, td {
+        padding: 1em;
+    }
+
+    .weather-overlay {
+        left: 15em;
+    }
+
+
 }
