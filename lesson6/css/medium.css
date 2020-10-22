@@ -43,7 +43,7 @@
     }
 
     .weather-overlay {
-        left: 5em;
+        left: 15em;
     }
     .currentSum tr, .currentSum td{
         border: none;
