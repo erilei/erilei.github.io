@@ -12,3 +12,7 @@ picture::after{
     white-space: pre;
 }
 
+body{
+    text-align: center;
+}
+
