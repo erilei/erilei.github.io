@@ -51,6 +51,18 @@ header {
 .fiveDay {
     display: none;
 }
+.bannerimg::after{
+    content: "\A";
+    white-space: pre;
+}
+.fiveDay::after{
+    content: "\A";
+    white-space: pre;
+}
+.paragrph::after{
+    content: "\A";
+    white-space: pre;
+}
 
 .heading {
     display: flex;
@@ -222,6 +234,29 @@ article picture.articleimg img{
 .contact {
     background-color: #e3f2e9;
 }
+div.contact {
+    margin-top: 1em;
+}
+
+
+.fas::before{
+    content: "\A\A";
+    white-space: pre;
+}
+.fa::after{
+    content: "\A";
+    white-space: pre;
+}
+.fa::before{
+    content: "\A\A";
+    white-space: pre;
+}
+picture.social::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+
+
 .map {
     display: none;
 }
