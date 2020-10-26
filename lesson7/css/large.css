@@ -1,0 +1,48 @@
+@media only screen and (min-width: 60em) {
+
+    nav {
+        background: var(--primary-color); /* Old browsers */
+        
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */    
+    }
+        
+    nav button {display: none;}
+        
+    nav ul.hide {display: block;}
+        
+    nav ul {text-align: center;}
+        
+    nav ul li{
+        display:inline;
+   }
+        
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+        display: inline-block;
+        font-size: 20px;
+    }
+    main, footer{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .heading {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    /* --------grid-------- */
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+}
