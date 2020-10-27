@@ -141,9 +141,8 @@ h1 {
 
 /* -------grid------ */
 
-figcaption {
+main p {
     font-family: var(--paragraph-font);
-    padding: .5em;
 }
 
 
