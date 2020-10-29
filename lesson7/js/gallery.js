@@ -28,7 +28,7 @@ function preloadSource(source) {
         return;
     }
     source.srcset = srcset;
-    source.removeAttribute('data-src')
+    source.removeAttribute('data-srcset')
 }
 
 const picOptions = {
