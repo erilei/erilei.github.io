@@ -54,8 +54,8 @@
                 <legend>Storm Information</legend>
                 <label class="top">Storm Date<input type="date" name="sdate"></label>
 
-                <label class="top" for="types">Storm Type
-                    <input name="stype" list="stormtype">
+                <label class="top" for="types" id="types">Storm Type
+                    <input name="stype" list="stormtype" for="types">
                 
                 <datalist id="stormtype">
                     <option value="Flash Flood"></option>
@@ -102,8 +102,8 @@
                     <label for="nodanger" class="sbs"><input type="radio" id="nodanger" name="danger" value="no"> No</label>
 
 
-                    <label class="top">Additional Information and Comments
-                    <input type="textarea" id="addinfo" name="addinfo"></label>
+                    <label class="top" for="addinfo">Additional Information and Comments
+                    <textarea id="addinfo" name="addinfo" row="5" col="50"></textarea></label>
             </fieldset>
             <input type="submit" value="Report Storm" class="submitbutton">
     

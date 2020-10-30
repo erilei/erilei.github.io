@@ -211,10 +211,7 @@ p {
 
 /* -------id-------- */
 
-#addinfo {
-    height: 100px;
-    width: 300px;
-}
+
 #pancake {
     display: none;
     font-size: 1.2em;
