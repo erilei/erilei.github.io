@@ -161,7 +161,7 @@ form label.top {
     display: block;
     padding-top: 2rem;
     padding-bottom: .5rem;
-    color: coral;
+    color: navy;
     font-size: 1rem;
 }
 span {
@@ -213,7 +213,7 @@ p {
 
 #addinfo {
     height: 100px;
-    width: 250px;
+    width: 300px;
 }
 #pancake {
     display: none;
