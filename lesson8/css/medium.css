@@ -1,0 +1,61 @@
+@media only screen and (min-width: 40em) {
+    
+
+    main {
+        padding: 1em;
+    }
+    html, body {
+        background-color: var(--background-color);
+    }
+    /* --------nav-------- */
+    nav {
+        background: var(--primary-color); /* Old browsers */
+        
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+        
+    }
+        
+    nav button {display: none;}
+        
+    nav ul.hide {display: block;}
+        
+    nav ul {text-align: center;}
+        
+    nav ul li{
+        display:inline;
+    }
+        
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+        display: inline-block;
+        font-size: 15px;
+    }
+
+
+
+    /* ------headings------ */
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .moto {
+        font-size: 1em;
+    }
+
+    .heading {
+        font-size: .8em;
+    }
+
+
+
+    /* -------header/footer items----- */
+
+
+    br.responsive {
+        display: none;
+    }
+
+
+}
