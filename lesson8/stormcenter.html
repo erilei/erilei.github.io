@@ -16,8 +16,8 @@
     <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
     <header>
         <picture class="logoimg">
-            <source media="(max-width: 200px)" srcset="images/logo83.png">
-            <source media="(max-width: 800px)" srcset="images/logo111.png">
+            <source media="(max-width: 640px)" srcset="images/logo83.png">
+            <source media="(max-width: 960px)" srcset="images/logo111.png">
             <img src="images/logo128.png" alt="logo">
         </picture>
             <section class="heading">
@@ -44,28 +44,70 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Reporter Information</legend>
-                <label class="top">Full Name*</label><input type="text" name="fname" minlength="5" required pattern="[A-Za-z]">
-                <label class="top">Email</label><input type="email" name="email" placeholder="someone@gmail.com">
-                <label class="top">Phone Number*</label><input type="tel" name="phone" required>
-                <label class="top">Zip Code*</label><input type="number" name="zcode" required>
+                <label class="top">Full Name*<input type="text" name="fname" minlength="5" required pattern="[a-zA-Z]+[ ][a-zA-Z]+"></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+                <label class="top">Zip Code*<input type="number" name="zcode" required></label>
             </fieldset>
 
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date<input type="date" name="sdate"></label>
+
+                <label class="top" for="types">Storm Type
+                    <input name="stype" list="stormtype">
+                
+                <datalist id="stormtype">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+                </label>
+            
+            
+                <label class="top" for="severe">Storm Severity Rating &nbsp;&nbsp;
+                    <span id="severevalue">5</span><br><input type="range" id="severe" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label>
+
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+
+                </datalist>
+
+                <label class="top">Storm Region
+                    <select name="region">
+                            <option value="">Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+                    </select>
+                </label>
+                
+                    
+                <label class="top">Is the user in danger?</label>
+                    <label for="yesdanger" class="sbs"><input type="radio" id="yesdanger" name="danger" value="yes"> Yes</label>
+                    <label for="maybedanger" class="sbs"><input type="radio" id="maybedanger" name="danger" value="maybe"> Maybe</label>
+                    <label for="nodanger" class="sbs"><input type="radio" id="nodanger" name="danger" value="no"> No</label>
 
 
-
-
+                    <label class="top">Additional Information and Comments</label>
+                    <input type="textarea" id="addinfo" name="addinfo">
+            </fieldset>
+            <input type="submit" value="Report Storm" class="submitbutton">
+    
         </form>
-      
-
-
-
-
-
-
-
-
-
-
     </main>
     <footer>
         <div class="lastInfo">
