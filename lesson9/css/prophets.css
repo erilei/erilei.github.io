@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Manrope');
+:root{
+    --primary-color: #5e5e5e; /*Navy */
+    --secondary-color: #333333; /*Light lime*/
+    --accent1-color: #Fcfaf9; /*Light navy */
+    --accent2-color: #abd8bc; /*Purple */
+    --background-color: #f3d3bd;
+
+    --heading-font: 'Questrial', sans-serif;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+
+
+body {
+    text-align: center;
+}
+p {
+    font-family: var(--paragraph-font);
+}
+
+/* -------headings------- */
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+
+/* ---------image--------- */
+img {
+    width: 25%;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
