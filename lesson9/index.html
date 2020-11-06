@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Climate Compound | Home</title>
+    <meta name="description" content="Weather page for Preston, Idaho. Class: WDD230 at BYU-Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+    <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <picture class="img">
+            <source media="(max-width: 641px)" srcset="images/logo83.png">
+            <source media="(max-width: 1017px)" srcset="images/logo111.png">
+            <img src="images/placeholder.png" data-src="images/logo128.png" alt="logo">
+        </picture>
+            <section class="heading">
+            <h1>Climate Compound</h1>
+            <div class="moto">Where weather is life</div>
+            </section>
+        
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2 class="page">Home</h2>
+        <h2 class="linky"><a href="home-wireframes.html" target="_blank">Wireframes</a></h2>
+
+
+        <div class="hero-div">
+            <picture class="img">
+                <source media="(max-width: 641px)" srcset="images/placeholder.png" data-srcset="images/hero307x149.jpg">
+                <source media="(max-width: 1017px)" srcset="images/placeholder.png" data-srcset="images/hero614x298.jpg">
+                <img src="images/hero.jpg" alt="hero banner image"></picture>
+        </div>
+
+        <div class="town-cards"></div>
+
+        <div class="extra-content">
+            <p class="more-weather">For fun weather games for kids, visit <a href="https://www.turtlediary.com/games/weather-and-seasons.html" target="_blank">Turtle Diary (links to an external site)</a></p>
+            <p class="more-weather">For more about the atmosphere, visit <a href="https://www.weather.gov/jetstream/" target="_blank">JetStream (links to an external site)</a></p>
+        </div>
+
+
+
+        <div class="contact">
+            <img src="images/map.jpg" alt="map of places" class="map">
+            <p class="location"><strong>Climate Compound</strong><br>
+            <span class="address">&#127980; 30 N 1st East -- Preston, ID 83263</span>
+            <span class="phone">&#128222; 999.999.9999</span>
+            <span class="email">&#128231; climatecompound@ttr.com</span>
+            <picture class="social">
+            <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+            </picture>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="lastInfo">
+                &#169; Climate Compound | Attributions |<br class='responsive'> Erica Kennington
+                <div id="updated"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lesson9.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/towncards.js"></script>
+
+</body>
+</html>
