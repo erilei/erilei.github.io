@@ -56,7 +56,7 @@ div.contact {
     margin-top: 1em;
     font-family: var(--paragraph-font);
 }
-picture.social::before{
+div.social::before{
     content: "\A\A\A";
     white-space: pre;
 }
@@ -79,6 +79,10 @@ span.phone::after{
     font-size: 12px;
     text-align: center;
     padding: 1em;
+}
+span.email::after {
+    content: "\A\A";
+    white-space: pre;
 }
 
 
