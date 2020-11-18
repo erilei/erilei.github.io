@@ -231,7 +231,7 @@ h2 {
 .paragraph {
     text-align: left;
 }
-article picture.articleimg img{
+article img{
     box-shadow: 0px 0px 10px black;
     margin: 10px auto 20px;
     display: block;
