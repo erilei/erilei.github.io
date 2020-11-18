@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Manrope');
+:root{
+    --primary-color: #5e5e5e; /*Navy */
+    --secondary-color: #333333; /*Light lime*/
+    --accent1-color: #Fcfaf9; /*Light navy */
+    --accent2-color: #abd8bc; /*Purple */
+    --background-color: #f3d3bd;
+
+    --heading-font: 'Questrial', sans-serif;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+html, body {
+    background-color: var(--accent2-color);
+}
+
+main {
+
+    background-color: var(--accent1-color);
+}
+
+header, footer {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+footer {
+    font-family: var(--paragraph-font);
+}
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+}
+
+/* -------header/footer items------- */
+
+br.responsive{
+    display: inline;
+}
+.contact {
+    background-color: #e3f2e9;
+}
+div.contact {
+    margin-top: 1em;
+}
+picture.social::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+span.address::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+span.address::after{
+    content: "\A\A";
+    white-space: pre;
+}
+span.phone::after{
+    content: "\A\A";
+    white-space: pre;
+}
+.map {
+    display: none;
+}
+.location {
+    font-size: 12px;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+/* -----------nav------------ */
+
+nav ul li a:hover{background-color: black;}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a{background-color: var(--accent1-color); color: var(--primary-color);}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    line-height: 35px;
+}
+
+nav ul {
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    background: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+}
+
+nav a:link, nav a:visited {
+    color: var(--background-color);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+
+
+
+/* ---------headings--------- */
+
+.town{
+    padding: 1em;
+}
+h2 {
+    font-size: 14px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    margin: 0 0 0 17px;
+}
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+.weather-overlay h2 {
+    color: black;
+    margin: 0;
+    text-decoration: underline;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+}
+.moto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+}
+
+
+
+/* --------table-------- */
+
+.fiveDay {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.fiveDay::after{
+    content: "\A";
+    white-space: pre;
+}
+.fiveDay section:nth-child(1), .fiveDay section:nth-child(2) {
+    grid-column: span 3;
+}
+.fiveDay section:nth-child(3), .fiveDay section:nth-child(4), .fiveDay section:nth-child(5) {
+    grid-column: span 2;
+}
+.fiveDay section {
+    border: 1px solid var(--secondary-color);
+}
+#forecastGrid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 600px;
+}
+#forecastGrid h4 {
+    background-color: var(--background-color);
+    padding: .5em;
+    margin: 0;
+}
+#forecastGrid p {
+    padding: .5em;
+}
+
+
+/* --------article------- */
+
+.article {
+    border: 1px solid var(--accent2-color);
+    background-color: #e3f2e9;
+    padding: .5em;
+}
+.author {
+    font-size: 12px;
+    font-size: 14px;
+}
+.paragraph {
+    text-align: left;
+}
+article picture.articleimg img{
+    box-shadow: 0px 0px 10px black;
+    margin: 10px auto 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main p, section, article{
+    font-family: var(--paragraph-font);
+    margin: 0;
+}
+.paragrph::after{
+    content: "\A";
+    white-space: pre;
+}
+
+
+
+
+
+/* --------overlay------- */
+
+.hero-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.weather-overlay {
+    position: absolute;
+    justify-self: left;
+    top: .5em;
+    left: 3.5em;
+    padding: .5em;
+    background: radial-gradient(#f1f9f4, #81c59b);
+    border: 1px solid var(--accent2-color);
+    box-shadow: 0 0 30px black;
+    opacity: .8;
+}
+.colweight {
+    color: black;
+    font-weight: bold;
+}
+    .colweight::after{
+        content: "\A";
+        white-space: pre;
+    }
+.bannerimg::after{
+    content: "\A\A";
+    white-space: pre;
+}
+
+
+
+/* -------id-------- */
+
+#pancake {
+    display: none;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 3px;
+    font-family: var(--paragraph-font);
+}
+div#pancake {
+    background-color: var(--background-color);
+}
