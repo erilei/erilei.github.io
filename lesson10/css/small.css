@@ -54,8 +54,8 @@ br.responsive{
 div.contact {
     margin-top: 1em;
 }
-picture.social::before{
-    content: "\A\A\A";
+div.social::before{
+    content: "\A\A";
     white-space: pre;
 }
 span.address::before{
@@ -75,6 +75,7 @@ span.phone::after{
 }
 .location {
     font-size: 12px;
+    font-family: var(--paragraph-font);
     text-align: center;
     padding: 1em;
 }
