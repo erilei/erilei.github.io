@@ -223,6 +223,10 @@ h2 {
     font-size: 12px;
     font-size: 14px;
 }
+.author::after {
+    content:"\a\a";
+    white-space: pre;
+}
 .paragraph {
     text-align: left;
 }
