@@ -7,17 +7,9 @@ fetch(requestURL)
   
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    for (let i = 0 ; i < towns.length -1; i++) {
-            if (i == 0) {
-                continue;
-            }
-            if (i == 2) {
-                continue;
-            }
-            if (i ==3) {
-                continue;
-            }
+    const filter = towns.filter(town => (town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven"));  // temporary checking for valid response and data parsing
+    for (let i = 0 ; i < filter.length; i++) {
+
         let card = document.createElement('section');
         let h1 = document.createElement('h1');
         let motto = document.createElement('div');
@@ -26,12 +18,12 @@ fetch(requestURL)
         let rain = document.createElement('p');
         let image = document.createElement('img');
 
-        h1.textContent = towns[i].name;
-        motto.textContent = towns[i].motto;
-        founded.textContent = "Year founded: " + towns[i].yearFounded;
-        population.textContent = "Population: " + towns[i].currentPopulation;
-        rain.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
-        image.setAttribute('src', "images/" + towns[i].photo);
+        h1.textContent = filter[i].name;
+        motto.textContent = filter[i].motto;
+        founded.textContent = "Year founded: " + filter[i].yearFounded;
+        population.textContent = "Population: " + filter[i].currentPopulation;
+        rain.textContent = "Annual Rainfall: " + filter[i].averageRainfall;
+        image.setAttribute('src', "images/" + filter[i].photo);
         image.setAttribute('alt', h1.textContent);
 
         card.appendChild(h1);
