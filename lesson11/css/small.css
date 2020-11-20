@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Manrope');
+:root{
+    --primary-color: #5e5e5e; /*Navy */
+    --secondary-color: #333333; /*Light lime*/
+    --accent1-color: #Fcfaf9; /*Light navy */
+    --accent2-color: #abd8bc; /*Purple */
+    --background-color: #f3d3bd;
+
+    --heading-font: 'Questrial', sans-serif;
+    --paragraph-font: 'Manrope', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+html, body {
+    background-color: var(--accent2-color);
+}
+
+main {
+
+    background-color: var(--accent1-color);
+}
+
+header, footer {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+footer {
+    font-family: var(--paragraph-font);
+}
+footer a:link, footer a:visited {
+    color: var(--accent1-color);
+}
+
+
+/* -------header/footer items------- */
+
+br.responsive{
+    display: inline;
+}
+.contact {
+    background-color: #e3f2e9;
+}
+div.contact {
+    margin-top: 1em;
+    font-family: var(--paragraph-font);
+}
+div.social::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+span.address::before{
+    content: "\A\A\A";
+    white-space: pre;
+}
+span.address::after{
+    content: "\A\A";
+    white-space: pre;
+}
+span.phone::after{
+    content: "\A\A";
+    white-space: pre;
+}
+.map {
+    display: none;
+}
+.location {
+    font-size: 12px;
+    text-align: center;
+    padding: 1em;
+}
+span.email::after {
+    content: "\A\A";
+    white-space: pre;
+}
+
+
+
+/* -----------nav------------ */
+
+nav ul li a:hover{background-color: black;}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a{background-color: var(--accent1-color); color: var(--primary-color);}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    line-height: 35px;
+}
+
+nav ul {
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    background: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+}
+
+nav a:link, nav a:visited {
+    color: var(--background-color);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+
+
+
+/* ---------headings--------- */
+
+.page{
+    padding: 1em;
+}
+h2 {
+    font-size: 14px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    margin: 0 0 0 17px;
+}
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+}
+.moto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+}
+
+
+
+
+article section h1 {
+    font-family: var(--heading-font);
+    margin-bottom: 1px;
+}
+article div {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+}
+article p {
+    font-family: var(--paragraph-font);
+}
+
+/* ----------cards-------- */
+
+div section {
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: var(--accent2-color);
+    border: 1px solid green;
+    margin: 1rem;
+}
+section h1 {
+    font-family: var(--heading-font);
+    margin-bottom: 1px;
+}
+section div {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+    font-weight: bold;
+}
+section p {
+    font-family: var(--paragraph-font);
+}
+
+
+/* -------extra div------- */
+
+.extra-content {
+    background-color: #F9E6DC;
+    padding: 1.5rem;
+    width: auto;
+    text-align: center;
+}
+
+.more-weather {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+
+/* ------lazyload/images------- */
+
+header img, .hero-div img{
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: auto;
+}
+
+.hero-div{
+    text-align: center;
+}
+
+
+/* -------id-------- */
+
+#pancake {
+    display: none;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 3px;
+    font-family: var(--paragraph-font);
+}
+div#pancake {
+    background-color: var(--background-color);
+}
+
+
+/* -------wireframe------ */
+
+
+.linky {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+
+.wireframe {
+    font-family: var(--heading-font);
+}
+.paraframe {
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    padding-left: 3rem;
+}
+.paraframe img {
+    width: 480px;
+    max-width: 400px;
+    padding: 1.5rem 0 3rem 3rem;
+}

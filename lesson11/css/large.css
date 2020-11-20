@@ -1,0 +1,66 @@
+@media only screen and (min-width: 65em) {
+
+    nav {
+        background: var(--primary-color); /* Old browsers */
+        
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */    
+    }
+        
+    nav button {display: none;}
+        
+    nav ul.hide {display: block;}
+        
+    nav ul {text-align: center;}
+        
+    nav ul li{
+        display:inline;
+   }
+        
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+        display: inline-block;
+        font-size: 20px;
+    }
+    main, footer{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .heading {
+        font-size: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+    /* --------grid-------- */
+    
+    div.town-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.town-cards section{
+        display: block;
+        height: auto;
+    }
+    section:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section:nth-child(1) img {
+        padding-top: 2rem;
+    }
+    section:nth-child(2) img {
+        padding-top: 2rem;
+    }
+
+    section img{
+        padding: 1rem;
+    }
+    section div{
+        font-size: .90rem;
+    }
+}

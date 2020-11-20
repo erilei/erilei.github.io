@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Preston, Idaho</title>
+    <meta name="description" content="Weather page for Preston, Idaho. Class: WDD230 at BYU-Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+    <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <picture class="img">
+            <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/logo83.png">
+            <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/logo111.png">
+            <img src="images/placeholder.png" data-src="images/logo128.png" alt="climate compound">
+        </picture>
+            <section class="heading">
+            <h1>Climate Compound</h1>
+            <div class="moto">Where weather is life</div>
+            </section>
+        
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../lesson9/index.html">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2 class="town">Preston Idaho</h2>
+        <div class="hero-div">
+            <picture class="bannerimg img">
+                <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/herosm307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/heromd614x298.jpg">
+                <img src="images/placeholder.png" data-src="images/herolg880x428.jpg" alt="main banner">
+                
+            </picture>
+
+            <section class="weather-overlay">
+                <h2>Weather Summary</h2>
+                <span>Currently: </span>
+                    <span class="colweight" id="current-cond"></span>
+                <span>High: </span>
+                    <span class="colweight">
+                    <span class="temp" id="temp-max"></span> &#176;F</span>
+                <span>Wind Chill: </span>
+                    <span class="colweight" id="chill"></span>
+                <span>Humidity: </span>
+                    <span class="colweight">
+                    <span id="humid"></span> %</span>
+                <span>Wind Speed: </span>
+                    <span class="colweight">
+                    <span id="wind-speed"></span> mph</span>
+
+            </section>
+        </div>
+
+        <section class="fiveDay">
+            <h3>5 Day Forecast</h3>
+            <div id="forecastGrid"></div>
+        </section>
+        <article class="article">      
+            <picture class= "img">
+                <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/parksm195x130.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/parkmd390x260.jpg">
+                <img src="images/placeholder.png" data-src="images/parklg440x293.jpg" alt="park">  
+            </picture>
+            
+            <h2>Founders Day Fresco</h2>
+                <p class="author">By Jamica Juarez</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </article>
+        <div class="contact">
+            <picture class="img">
+                <img src="images/placeholder.png" data-src="images/map.jpg" alt="map of places" class="map">
+            </picture>
+            <div class="location"><strong>Climate Compound</strong><br>
+                <span class="address">&#127980; 30 N 1st East -- Preston, ID 83263</span>
+                <span class="phone">&#128222; 999.999.9999</span>
+                <span class="email">&#128231; climatecompound@ttr.com</span>
+                <div class="social">
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="lastInfo">
+                &#169; Climate Compound | Attributions |<br class='responsive'> Erica Kennington
+                <div id="updated"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lesson10.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/forecast.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+@media only screen and (min-width: 40em) {
+    
+
+    main {
+        padding: 1em;
+    }
+    html, body {
+        background-color: var(--background-color);
+    }
+    /* --------nav-------- */
+    nav {
+        background: var(--primary-color); /* Old browsers */
+        
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+        
+    }
+        
+    nav button {display: none;}
+        
+    nav ul.hide {display: block;}
+        
+    nav ul {text-align: center;}
+        
+    nav ul li{
+        display:inline;
+    }
+        
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+        display: inline-block;
+        font-size: 15px;
+    }
+
+
+
+    /* ------headings------ */
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .moto {
+        font-size: 1em;
+    }
+
+    .heading {
+        font-size: .8em;
+    }
+
+
+
+    /* -------header/footer items----- */
+
+
+    br.responsive {
+        display: none;
+    }
+    .contact {
+        display: flex;
+    }
+    .map {
+        display: inline;
+        border: 1px solid black;
+        margin: 1em 2em 1em 3em;
+    }
+    .location {
+        font-size: 12px;
+        padding: 3em;
+        align-self: center;
+        margin-left: 4em;
+    }
+
+
+
+
+
+    section img {
+        width: auto;
+    }
+
+    /* ---------grid-------- */
+
+    div.town-cards {
+        width: auto;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    div.town-cards section{
+        height: 20rem;
+    }
+    section:nth-child(even) div {
+        grid-column: 2;
+    }
+    section:nth-child(even) p {
+        grid-column: 2;
+    }
+    section:nth-child(even) h1 {
+        grid-column: 2;
+        margin-bottom: .5rem;
+    }
+    section:nth-child(even) img {
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        justify-self: center;
+    }
+    section:nth-child(odd) h1 {
+        margin-bottom: .5rem;
+    }
+    section:nth-child(odd) div, p, h1 {
+        grid-column: 1;
+    }
+    section:nth-child(odd) img {
+        grid-column: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        justify-self: center;
+    }
+
+
+}
