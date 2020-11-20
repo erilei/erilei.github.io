@@ -81,6 +81,22 @@ span.phone::after{
 }
 
 
+/* -------extra div------- */
+
+.extra-content {
+    background-color: #F9E6DC;
+    padding: 1.5rem;
+    width: auto;
+    text-align: center;
+}
+
+.more-weather {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 1rem;
+}
+
 
 /* -----------nav------------ */
 
@@ -281,6 +297,122 @@ main p, section, article{
     content: "\A\A";
     white-space: pre;
 }
+
+
+/* ----------cards-------- */
+
+div.town-cards section {
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: var(--accent2-color);
+    border: 1px solid green;
+    margin: 1rem;
+}
+div.town-cards section h1 {
+    font-family: var(--heading-font);
+    margin-bottom: 1px;
+}
+div.town-cards section div {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+    font-weight: bold;
+}
+div.town-cards section p {
+    font-family: var(--paragraph-font);
+}
+
+div.container p {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ------lazyload------- */
+
+img{
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
+
+/* ----------form--------- */
+
+form {
+    font-family: var(--paragraph-font);
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend{
+    color: var(--secondary-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top {
+    display: block;
+    padding: 1rem;
+    color: navy;
+    font-size: 1rem;
+}
+form span {
+    color: black;
+    font-size: 1.5rem;
+}
+
+form label.top input, form label.top select {
+    -webkid-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--primary-color);
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+form label.sbs {
+    display: block;
+    padding:.75rem;
+    color: black;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+form input{
+    padding: .5rem;
+}
+form select {
+    padding: .75rem;
+}
+form input.submitbutton {
+    border: none;
+    background-color: coral;
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
 
 
 

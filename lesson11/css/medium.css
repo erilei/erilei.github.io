@@ -49,6 +49,13 @@
     }
 
 
+    /* -------grid------- */
+    .container {
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
 
     /* -------header/footer items----- */
 
@@ -91,6 +98,48 @@
     }
     .fiveDay {
         font-size: 15px;
+    }
+
+
+       /* ---------grid-------- */
+
+    div.town-cards {
+        width: auto;
+    }
+    div.town-cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    div.town-cards section{
+        height: 20rem;
+    }
+    div.town-cards section:nth-child(even) div {
+        grid-column: 2;
+    }
+    div.town-cards section:nth-child(even) p {
+        grid-column: 2;
+    }
+    div.town-cards section:nth-child(even) h1 {
+        grid-column: 2;
+        margin-bottom: .5rem;
+    }
+    div.town-cards section:nth-child(even) img {
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        justify-self: center;
+    }
+    div.town-cards section:nth-child(odd) h1 {
+        margin-bottom: .5rem;
+    }
+    div.town-cards section:nth-child(odd) div, p, h1 {
+        grid-column: 1;
+    }
+    div.town-cards section:nth-child(odd) img {
+        grid-column: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        justify-self: center;
     }
 
 

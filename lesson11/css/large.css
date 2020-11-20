@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 65em) {
 
     nav {
         background: var(--primary-color); /* Old browsers */
@@ -23,7 +23,7 @@
         font-size: 20px;
     }
     main, footer{
-        width: 900px;
+        width: 1000px;
         margin: 0 auto;
     }
 
@@ -38,4 +38,39 @@
         left: 7em;
     }
 
+    /* --------grid-------- */
+
+    div.town-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.town-cards section{
+        display: block;
+        height: auto;
+    }
+    div.town-cards section:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    div.town-cards section:nth-child(1) img {
+        padding-top: 2rem;
+    }
+    div.town-cards section:nth-child(2) img {
+        padding-top: 2rem;
+    }
+
+    div.town-cards section img{
+        padding: 1rem;
+    }
+    div.town-cards section div{
+        font-size: .90rem;
+    }
+
+        /* --------grid-------- */
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    div.card:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
