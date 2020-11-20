@@ -273,7 +273,7 @@ main p, section, article{
     color: black;
     font-weight: bold;
 }
-    .colweight::after{
+.colweight::after{
         content: "\A";
         white-space: pre;
     }

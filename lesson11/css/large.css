@@ -1,4 +1,4 @@
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 60em) {
 
     nav {
         background: var(--primary-color); /* Old browsers */
@@ -23,7 +23,7 @@
         font-size: 20px;
     }
     main, footer{
-        width: 1000px;
+        width: 900px;
         margin: 0 auto;
     }
 
@@ -34,33 +34,8 @@
     h2 {
         font-size: 20px;
     }
-
-
-    /* --------grid-------- */
-    
-    div.town-cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    div.town-cards section{
-        display: block;
-        height: auto;
-    }
-    section:nth-child(even) {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    section:nth-child(1) img {
-        padding-top: 2rem;
-    }
-    section:nth-child(2) img {
-        padding-top: 2rem;
+    .weather-overlay{
+        left: 7em;
     }
 
-    section img{
-        padding: 1rem;
-    }
-    section div{
-        font-size: .90rem;
-    }
 }
