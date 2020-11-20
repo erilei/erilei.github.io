@@ -260,9 +260,9 @@ div#pancake {
 /* -------wireframe------ */
 
 
-.linky {
-    font-style: italic;
+.wirelink {
     font-size: 1.5rem;
+    color: black;
 }
 
 

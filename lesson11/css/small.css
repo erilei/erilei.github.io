@@ -260,11 +260,6 @@ div#pancake {
 /* -------wireframe------ */
 
 
-.linky {
-    font-style: italic;
-    font-size: 1.5rem;
-}
-
 
 .wireframe {
     font-family: var(--heading-font);
