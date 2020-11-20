@@ -3,12 +3,12 @@ const iconURL = "http://openweathermap.org/img/w/";
 const abbreviate = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 fetch(api)
-    .then((response) => response.json())
-    .then((fiveDay) => {
-        console.log(fiveDay);
+    .then(res => {
+        return res.json()
+    })
+    .then(fiveDay => {
 
         const fiveDayTime = fiveDay.list.filter(entry => new Date(entry.dt_txt).getHours() == 18);
-        console.log(fiveDayTime);
 
         for (i=0; i< fiveDayTime.length; i++) {
             let section = document.createElement('section');

@@ -2,7 +2,6 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject)
         const desc = jsObject.weather[0].description;  // note how we reference the weather array
         document.getElementById('current-cond').textContent = desc;
         const t = document.getElementById('temp-max').textContent = jsObject.main.temp_max;
