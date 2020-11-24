@@ -37,7 +37,7 @@
     /* ------headings------ */
 
     h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .moto {
@@ -72,7 +72,6 @@
         margin: 1em 2em 1em 3em;
     }
     .location {
-        font-size: 12px;
         padding: .5em;
         align-self: center;
         margin-left: 4em;

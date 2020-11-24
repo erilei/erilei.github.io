@@ -53,6 +53,7 @@ br.responsive{
 }
 div.contact {
     margin-top: 1em;
+    font-size: 35px;
 }
 div.social::before{
     content: "\A\A";
@@ -74,11 +75,12 @@ span.phone::after{
     display: none;
 }
 .location {
-    font-size: 12px;
     font-family: var(--paragraph-font);
     text-align: center;
     padding: 1em;
+    font-size: 20px;
 }
+
 
 
 /* -------extra div------- */
@@ -154,7 +156,7 @@ nav a:hover {
     padding: 1em;
 }
 h2 {
-    font-size: 14px;
+    font-size: 20px;
 }
 header {
     display: flex;
