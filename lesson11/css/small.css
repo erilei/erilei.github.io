@@ -78,7 +78,7 @@ span.phone::after{
     font-family: var(--paragraph-font);
     text-align: center;
     padding: 1em;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
