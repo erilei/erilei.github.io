@@ -416,7 +416,14 @@ form input.submitbutton {
 }
 
 
-
+.event-list{
+    background-color: var(--background-color);
+    margin: 1em;
+    padding: 1em;
+}
+.event-list ul li{
+    font-family: var(--paragraph-font);
+}
 
 /* -------id-------- */
 
