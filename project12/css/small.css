@@ -1,0 +1,376 @@
+:root{
+    --primary-color: #E4572E; /*Flame */
+    --secondary-color: #29335C; /*Space Cadet (navy)*/
+    --accent1-color: #F3A712; /*Marigold*/
+    --accent2-color: #A8C686; /*Olivine*/
+    --background-color: #D4E3EC; /*Beau Blue*/
+
+    --heading-font: 'Acme', sans-serif;
+    --paragraph-font: 'Sarala', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+html, body {
+    background-color: var(--accent2-color);
+}
+main {
+    background-color: var(--background-color);
+}
+
+/* ------headings------ */
+
+h1{
+    font-family: var(--heading-font);
+}
+h2{
+    font-family: var(--heading-font);
+    font-size: 25px;
+}
+
+
+/*------header/footer items------*/
+
+header, footer {
+    background-color: var(--accent2-color);
+    padding: 1em;
+}
+footer {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.heading h1 {
+    color: var(--secondary-color);
+    margin: 0 0 0 17px;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+}
+div.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+}
+.title {
+    text-align: center;
+    padding: 1em;
+    font-size: 20px;
+}
+h2.weather-head{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+.contact {
+    background: #FADB9E; /*peach*/
+    border: 1px solid var(--accent1-color);
+    text-align: center;
+    padding: 1em;
+}
+
+main::after{
+    content: "\A";
+    white-space: pre;
+}
+.map::after {
+    content: "\A\A";
+    white-space: pre;
+}
+.location span {
+    font-family: var(--paragraph-font);
+}
+div.location {
+    font-family: var(--heading-font);
+}
+span.address::before {
+    content: "\A\A";
+    white-space: pre;
+}
+span.phone::before {
+    content: "\A";
+    white-space: pre;
+}
+span.email::before {
+    content: "\A";
+    white-space: pre;
+}
+div.social::before {
+    content: "\A\A";
+    white-space: pre;
+}
+br.responsive{
+    display: inline;
+}
+
+
+
+
+
+/*------body items-----*/
+
+.sumRentName {
+    text-align: center;
+    font-size: 20px;
+}
+.sumRentName::before {
+    content: "\A";
+    white-space: pre;
+}
+.summaryRentals {
+    border: 1px solid var(--secondary-color);
+}
+div.summaryRentals{
+    padding: 1em;
+}
+div.backgroundImg {
+    background-image: url('../images/beachscootsmall.jpg');
+    height: 636px;
+    width: 100%;
+}
+.summaryRentals ul li {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    list-style: none;
+}
+
+
+
+/*-----flex-----*/
+
+  /* --------forecast-------- */
+
+  .threeDay {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.threeDay::after{
+    content: "\A\A";
+    white-space: pre;
+}
+.threeDay section {
+    border: 1px solid var(--secondary-color);
+}
+#forecastGrid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 600px;
+}
+#forecastGrid h4 {
+    background-color: var(--background-color);
+    padding: .5em;
+    margin: 0;
+}
+#forecastGrid p {
+    padding: .5em;
+}
+.colweight {
+    color: black;
+    font-weight: bold;
+}
+.colweight::after{
+    content: "\A";
+    white-space: pre;
+}
+
+
+
+.right-align-box {
+    padding: 1em;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+.threeDay::before {
+    content: "\A\A";
+    white-space: pre;
+}
+.right-align-box span {
+    font-family: var(--paragraph-font);
+}
+
+
+
+
+/* --------nav------- */
+
+nav ul li a:hover{background-color: var(--accent2-color);}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a{background-color: var(--background-color); color: var(--primary-color);}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+    font-size: 20px;
+}
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+nav {
+    font-family: var(--heading-font);
+    font-size: 30px;
+    line-height: 50px;
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+nav ul {
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    background: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+}
+nav a:link, nav a:visited {
+    color: var(--background-color);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--primary-color);
+}
+
+
+
+/*--------rental link-------*/
+.action{
+    text-align: center;
+}
+.action::after {
+    content:"\A\A";
+    white-space: pre;
+}
+.action::before {
+    content: "\A\A";
+    white-space: pre;
+}
+.button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--accent2-color);
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+}
+
+
+
+
+/*------slide show-----*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+      left: 0;
+      border-radius: 3pc 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s linear;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .centerDot{
+      text-align: center;
+      padding-bottom: 1em;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+

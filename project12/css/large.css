@@ -1,0 +1,18 @@
+@media only screen and (min-width: 80em) {
+    .heading {
+        font-size: 100%;
+    }
+    .title {
+        font-size: 25px;
+    }
+    h2.weather-head{
+        font-size: 25px;
+    }
+    
+
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+}

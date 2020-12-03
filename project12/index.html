@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Cozumel Scoots | Home</title>
+    <meta name="description" content="Rent vehicles at Cozumel Scoots.">
+    <link rel="shortcut icon" href="images/favicon-16x16.png">
+
+</head>
+<body>
+        <header>
+            <picture class="img">
+                <source media="(max-width: 655px)" srcset="images/placeholder.png" data-srcset="images/logo83x83.png">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/logo111x111.png">
+                <img src="images/placeholder.png" data-src="images/logo128x128.png" alt="Cozumel Scoots company logo">
+            </picture>
+            <section class="heading">
+                <h1>Cozumel Scoots</h1>
+                <div class="motto">Rent and Ride</div>
+            </section>
+        
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <main>
+
+        <h2 class="title">Cozumel, Mexico</h2>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+            <picture class="img mySlides fade">
+                <source media="(max-width: 655px)" srcset="images/placeholder307x149.png" data-srcset="images/beachpalm307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder614x298.png" data-srcset="images/beachpalm614x298.jpg">
+                <img src="images/placeholder880x418.png" data-src="images/beachpalm880x418.jpg" alt="Cozumel beach palm tree">      
+            </picture>
+
+            <picture class="img mySlides fade">
+                <source media="(max-width: 655px)" srcset="images/placeholder307x149.png" data-srcset="images/beachmotor307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder614x298.png" data-srcset="images/beachmotor614x298.jpg">
+                <img src="images/placeholder880x418.png" data-src="images/beachmotor880x418.jpg" alt="Cozumel beach motorcycle">      
+            </picture>
+  
+            <picture class="img mySlides fade">
+                <source media="(max-width: 655px)" srcset="images/placeholder307x149.png" data-srcset="images/beachhammock307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder614x298.png" data-srcset="images/beachhammock614x298.jpg">
+                <img src="images/placeholder880x418.png" data-src="images/beachhammock880x418.jpg" alt="Cozumel beach hammock">      
+            </picture>
+  
+            <picture class="img mySlides fade">
+                <source media="(max-width: 655px)" srcset="images/placeholder307x149.png" data-srcset="images/beachtree307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder614x298.png" data-srcset="images/beachtree614x298.jpg">
+                <img src="images/placeholder880x418.png" data-src="images/beachtree880x418.jpg" alt="Cozumel beach with boats and a tree">      
+            </picture>
+
+            <picture class="img mySlides fade">
+                <source media="(max-width: 655px)" srcset="images/placeholder307x149.png" data-srcset="images/beachbike307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder614x298.png" data-srcset="images/beachbike614x298.jpg">
+                <img src="images/placeholder880x418.png" data-src="images/beachbike880x418.jpg" alt="Cozumel beach motorcycle ride">      
+            </picture>
+
+            <picture class="img mySlides fade">
+                <source media="(max-width: 655px)" srcset="images/placeholder.png" data-srcset="images/beachcruisee307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder614x298.png" data-srcset="images/beachcruise614x298.jpg">
+                <img src="images/placeholder880x418.png" data-src="images/beachcruise880x418.jpg" alt="Cozumel cruise">      
+            </picture>
+  
+    <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+  <!-- The dots/circles -->
+        <div class="centerDot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+    <div class="mainSide">
+        <section class="right-align-box">
+            <h2 class="weather-head">Current Weather</h2>
+                <span>Currently: </span>
+                    <span class="colweight" id="current-cond"></span>
+                <span>Temperature: </span>
+                    <span class="colweight">
+                    <span class="temp" id="temp-max"></span>&#176;F</span>
+                <span>Humidity: </span>
+                    <span class="colweight">
+                    <span id="humid"></span>%</span>
+        </section>
+
+        <section class="threeDay">
+            <h2 class="weather-head">3 Day Forecast</h2>
+            <div id="forecastGrid"></div>
+        </section>
+    </div>
+    
+
+        <div class="action"><a href="#" class="button">Click Here to Book Your Rental</a></div>
+
+        <div class="summaryRentals backgroundImg">
+            <h2 class="weather-head">Types of Rentals</h2>
+            <h2 class="sumRentName">Honda Motor Scooters</h2>
+            <ul>
+                <li>Honda Metropolitan (49cc) - 1 person</li>
+                <li>Honda Dio (110cc) - 2 person</li>
+                <li>Honda PCX150 (149cc) - 2 person</li>
+            </ul>
+            <h2 class="sumRentName">ATV Side-by-Side</h2>
+            <ul>
+                <li>Honda Pioneer 1000</li>
+            </ul>
+            <h2 class="sumRentName">Jeep Rentals</h2>
+            <ul>
+                <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li><br>
+                <li>2-door Jeep Wrangler - open-air - manual - 4 people max</li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="contact">
+            <picture class="img map">
+                <img src="images/placeholder.png" data-src="images/map.png" alt="map of places" class="map">
+            </picture>
+            <div class="location"><strong>Cozumel Scoots</strong>
+                <span class="address">&#127980; 30 N 1st East -- Preston, ID 83263</span>
+                <span class="phone">&#128222; 999.999.9999</span>
+                <span class="email">&#128231; climatecompound@ttr.com</span>
+                <div class="social">
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="lastInfo">
+                &#169; Cozumel Scoots | Attributions |<br class='responsive'> Erica Kennington
+                <div id="updated"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/lazyisland.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/projectforecast.js"></script>
+
+</body>
+</html>

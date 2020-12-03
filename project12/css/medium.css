@@ -1,0 +1,82 @@
+@media only screen and (min-width: 41em){
+
+    nav {
+        background: var(--primary-color); /* Old browsers */
+
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+        border: none;
+    }
+
+    nav button {display: none;}
+
+    nav ul.hide {display: block;}
+
+    nav ul {text-align: left; padding-left: 2em;}
+
+    nav ul li{
+        display:inline;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+        display: inline-block;
+        font-size: 22px;
+    }
+
+
+
+
+    .motto {
+        font-size: 1em;
+    }
+
+    .heading {
+        font-size: .8em;
+    }
+    .title {
+        font-size: 22px;
+    }
+    h2.weather-head{
+        font-size: 22px;
+    }
+    
+
+    .threeDay {
+        font-size: 15px;
+    }
+    .right-align-box {
+        background-color: #F3B7A5;
+        padding-top: 35px;
+    }
+    #forecastGrid h4 {
+        background-color: #F3B7A5;
+    }
+
+    div.mainSide {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #F3B7A5;
+        border: 1px solid var(--primary-color);
+        max-width: 647px;
+        margin: 0 auto;
+    }
+
+    .summaryRentals {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    .contact {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding-top: 2.75em;
+    }
+
+    br.responsive {
+        display: none;
+    }
+}
