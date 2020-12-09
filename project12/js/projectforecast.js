@@ -12,7 +12,7 @@ fetch(api)
 
         for (i=0; i< 3; i++) {
             let section = document.createElement('section');
-            let day = document.createElement('h4');
+            let day = document.createElement('h3');
             let temp = document.createElement('p');
             let icon = document.createElement('img');
 
