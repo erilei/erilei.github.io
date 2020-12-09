@@ -107,3 +107,95 @@ fetch(requestURL)
     //     document.querySelector('div.cards').appendChild(card);
     // }
 });
+// Get the modal
+var metroModal = document.getElementById("metroModal");
+var dioModal = document.getElementById("dioModal");
+var pcxModal = document.getElementById("pcxModal");
+var pioneerModal = document.getElementById("pioneerModal");
+var wrangler4Modal = document.getElementById("wrangler4Modal");
+var wrangler2Modal = document.getElementById("wrangler2Modal");
+
+
+// Get the button that opens the modal
+var metroBtn = document.getElementById("metroBtn");
+var dioBtn = document.getElementById("dioBtn");
+var pcxBtn = document.getElementById("pcxBtn");
+var pioneerBtn = document.getElementById("pioneerBtn");
+var wrangler4Btn = document.getElementById("wrangler4Btn");
+var wrangler2Btn = document.getElementById("wrangler2Btn");
+
+
+// Get the <span> element that closes the modal
+var metroSpan = document.getElementsByClassName("metroClose")[0];
+var dioSpan = document.getElementsByClassName("dioClose")[0];
+var pcxSpan = document.getElementsByClassName("pcxClose")[0];
+var pioneerSpan = document.getElementsByClassName("pioneerClose")[0];
+var wrangler4Span = document.getElementsByClassName("wrangler4Close")[0];
+var wrangler2Span = document.getElementsByClassName("wrangler2Close")[0];
+
+// When the user clicks the button, open the modal 
+metroBtn.onclick = function() {
+  metroModal.style.display = "block";
+}
+dioBtn.onclick = function() {
+  dioModal.style.display = "block";
+}
+pcxBtn.onclick = function() {
+  pcxModal.style.display = "block";
+}
+pioneerBtn.onclick = function() {
+  pioneerModal.style.display = "block";
+}
+wrangler4Btn.onclick = function() {
+  wrangler4Modal.style.display = "block";
+}
+wrangler2Btn.onclick = function() {
+  wrangler2Modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+metroSpan.onclick = function() {
+  metroModal.style.display = "none";
+}
+dioSpan.onclick = function() {
+  dioModal.style.display = "none";
+}
+pcxSpan.onclick = function() {
+  pcxModal.style.display = "none";
+}
+pioneerSpan.onclick = function() {
+  pioneerModal.style.display = "none";
+}
+wrangler4Span.onclick = function() {
+  wrangler4Modal.style.display = "none";
+}
+wrangler2Span.onclick = function() {
+  wrangler2Modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == metroModal) {
+    metroModal.style.display = "none";
+  }
+window.onclick = function(event) {
+  if (event.target == dioModal) {
+    dioModal.style.display = "none";
+  }
+window.onclick = function(event) {
+  if (event.target == pcxModal) {
+    pcxModal.style.display = "none";
+  }
+window.onclick = function(event) {
+  if (event.target == pioneerModal) {
+    pioneerModal.style.display = "none";
+  }
+window.onclick = function(event) {
+  if (event.target == wrangler4Modal) {
+    wrangler4Modal.style.display = "none";
+  }
+window.onclick = function(event) {
+  if (event.target == wrangler2Modal) {
+    wrangler2Modal.style.display = "none";
+  }
+}}}}}}

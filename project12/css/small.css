@@ -437,8 +437,19 @@ th, td {
     border: 1px solid black;
     padding: .25em;
 }
+
 tr:nth-child(1) {
-    font-weight: bold;
+    background-color: #335771;
+    color: white;
+}
+tr:nth-child(2), tr:nth-child(3), tr:nth-child(6), tr:nth-child(7), tr:nth-child(10), tr:nth-child(11) {
+    background-color: #8EB3CC;
+}
+tr:nth-child(4), tr:nth-child(5), tr:nth-child(8), tr:nth-child(9), tr:nth-child(12), tr:nth-child(13) {
+    background-color: #C7D9E6;
+}
+tr.display {
+    border-top-style: hidden;
 }
 .rental-melon {
     background-color: #F6C5B7;
@@ -448,6 +459,54 @@ tr:nth-child(1) {
 div.rental-melon {
     max-width: 880px;
 }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #E3ECF2;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+
+  /* The Close Button */
+  .metroClose, .dioClose, .pcxClose, .pioneerClose, .wrangler4Close, .wrangler2Close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .metroClose:hover,
+  .metroClose:focus,
+  .dioClose:hover,
+  .dioClose:focus,
+  .pcxClose:hover,
+  .pcxClose:focus,
+  .pioneerClose:hover,
+  .pioneerClose:focus,
+  .wrangler4Close:hover,
+  .wrangler4Close:focus,
+  .wrangler2Close:hover,
+  .wrangler2Close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 /*--------rental link-------*/
@@ -474,6 +533,14 @@ div.rental-melon {
     margin: 4px 2px;
     cursor: pointer;
     font-family: var(--paragraph-font);
+}
+
+.refImg, .refTitle {
+    padding: 1em;
+}
+.refImg::before {
+    content: "\A\A";
+    white-space: pre;
 }
 
 
@@ -519,7 +586,7 @@ div.rental-melon {
   }
   .prev {
       left: 0;
-      border-radius: 3pc 0 0 3px;
+      border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
