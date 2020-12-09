@@ -426,14 +426,54 @@ table {
     margin: 0 auto;
     border: 3px solid black;
     border-collapse: collapse;
-    max-width: 637px;
+}
+caption {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 2em;
 }
 th, td {
     border: 1px solid black;
     padding: .25em;
 }
+tr:nth-child(1) {
+    font-weight: bold;
+}
+.rental-melon {
+    background-color: #F6C5B7;
+    border: 3px solid black;
+    padding: 1em;
+}
+div.rental-melon {
+    max-width: 880px;
+}
 
 
+/*--------rental link-------*/
+.map-action{
+    text-align: center;
+}
+.map-action::after {
+    content:"\A\A";
+    white-space: pre;
+}
+.map-action::before {
+    content: "\A\A";
+    white-space: pre;
+}
+.map-button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+}
 
 
 /*------slide show-----*/
