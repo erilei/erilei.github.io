@@ -342,7 +342,7 @@ form fieldset {
     border: none;
 }
 form legend{
-    color: var(--primary-color);
+    color:  #6C240E;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 1.5rem;
@@ -382,7 +382,7 @@ form select {
 }
 form input.submitbutton {
     border: none;
-    background-color: var(--primary-color);
+    background-color:  #6C240E;
     color: white;
     border-radius: 1rem;
     padding: 1rem;
