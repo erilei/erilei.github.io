@@ -251,7 +251,7 @@ nav ul li a:hover{background-color: var(--accent2-color);}
 
 nav ul.hide {display: none;}
 
-nav ul li.active a{background-color: var(--background-color); color: var(--primary-color);}
+nav ul li.active a{background-color: var(--background-color); color: var(--secondary-color);}
 
 nav ul li a {
     display: block;
@@ -594,26 +594,7 @@ div.rental-melon {
     background-color: rgba(255, 255, 255, 0.8);
   }
   
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: 0.6s linear;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  .centerDot{
-      text-align: center;
-      padding-bottom: 1em;
-  }
+
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
