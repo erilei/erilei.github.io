@@ -41,6 +41,10 @@
         font-size: 22px;
     }
     
+    th, td {
+        padding: .5em;
+    }
+
 
     .threeDay {
         font-size: 15px;

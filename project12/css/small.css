@@ -418,6 +418,22 @@ p.first, p.second {
     text-align: center;
 }
 
+/*-----rent table-----*/
+
+table {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+    max-width: 637px;
+}
+th, td {
+    border: 1px solid black;
+    padding: .25em;
+}
+
+
 
 
 /*------slide show-----*/

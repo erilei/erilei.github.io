@@ -33,7 +33,58 @@ fetch(requestURL)
     document.getElementById('walkHalf2').textContent = walkHalf2;
     let walkFull2 = rentals[1].walkFull;
     document.getElementById('walkFull2').textContent = walkFull2;
+
+    let type3 = rentals[2].type;
+    document.getElementById('type3').textContent = type3;
+    let person3 = rentals[2].people;
+    document.getElementById('person3').textContent = person3;
+    let resHalf3 = rentals[2].resHalf;
+    document.getElementById('resHalf3').textContent = resHalf3;
+    let resFull3 = rentals[2].resFull;
+    document.getElementById('resFull3').textContent = resFull3;
+    let walkHalf3 = rentals[2].walkHalf;
+    document.getElementById('walkHalf3').textContent = walkHalf3;
+    let walkFull3 = rentals[2].walkFull;
+    document.getElementById('walkFull3').textContent = walkFull3;
     
+    let type4 = rentals[3].type;
+    document.getElementById('type4').textContent = type4;
+    let person4 = rentals[3].people;
+    document.getElementById('person4').textContent = person4;
+    let resHalf4 = rentals[3].resHalf;
+    document.getElementById('resHalf4').textContent = resHalf4;
+    let resFull4 = rentals[3].resFull;
+    document.getElementById('resFull4').textContent = resFull4;
+    let walkHalf4 = rentals[3].walkHalf;
+    document.getElementById('walkHalf4').textContent = walkHalf4;
+    let walkFull4 = rentals[3].walkFull;
+    document.getElementById('walkFull4').textContent = walkFull4;
+
+    let type5 = rentals[4].type;
+    document.getElementById('type5').textContent = type5;
+    let person5 = rentals[4].people;
+    document.getElementById('person5').textContent = person5;
+    let resHalf5= rentals[4].resHalf;
+    document.getElementById('resHalf5').textContent = resHalf5;
+    let resFull5 = rentals[4].resFull;
+    document.getElementById('resFull5').textContent = resFull5;
+    let walkHalf5 = rentals[4].walkHalf;
+    document.getElementById('walkHalf5').textContent = walkHalf5;
+    let walkFull5 = rentals[4].walkFull;
+    document.getElementById('walkFull5').textContent = walkFull5;
+    
+    let type6 = rentals[5].type;
+    document.getElementById('type6').textContent = type6;
+    let person6 = rentals[5].people;
+    document.getElementById('person6').textContent = person6;
+    let resHalf6= rentals[5].resHalf;
+    document.getElementById('resHalf6').textContent = resHalf6;
+    let resFull6 = rentals[5].resFull;
+    document.getElementById('resFull6').textContent = resFull6;
+    let walkHalf6 = rentals[5].walkHalf;
+    document.getElementById('walkHalf6').textContent = walkHalf6;
+    let walkFull6 = rentals[5].walkFull;
+    document.getElementById('walkFull6').textContent = walkFull6;
 
     // for (let i = 0; i < prophets.length; i++ ) {
     //     let card = document.createElement('section');
