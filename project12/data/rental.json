@@ -11,7 +11,7 @@
         {
             "type": "~Honda Dio Scooter",
             "people": "2",
-            "resHalf": "#30",
+            "resHalf": "$30",
             "resFull": "$40",
             "walkHalf": "$35",
             "walkFull": "$45"
@@ -21,7 +21,7 @@
             "people": "2",
             "resHalf": "$40",
             "resFull": "$50",
-            "walkHalf": "45",
+            "walkHalf": "$45",
             "walkFull": "$55"
         },
         {
@@ -37,7 +37,7 @@
             "people": "5",
             "resHalf": "$70",
             "resFull": "$100",
-            "walkHalf": "85",
+            "walkHalf": "$85",
             "walkFull": "$125"
         },
         {
