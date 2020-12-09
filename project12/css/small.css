@@ -522,9 +522,9 @@ div.rental-melon {
     white-space: pre;
 }
 .map-button {
-    background-color: var(--primary-color);
+    background-color: #6C240E;
     border: none;
-    color: var(--secondary-color);
+    color: white;
     padding: 20px 34px;
     text-align: center;
     text-decoration: none;
