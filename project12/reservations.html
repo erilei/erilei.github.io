@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Cozumel Scoots | Rentals</title>
+    <meta name="description" content="Rent vehicles at Cozumel Scoots.">
+    <link rel="shortcut icon" href="images/favicon-16x16.png">
+
+</head>
+<body>
+        <header>
+            <picture class="img">
+                <source media="(max-width: 655px)" srcset="images/placeholder.png" data-srcset="images/logo83x83.png">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/logo111x111.png">
+                <img src="images/placeholder.png" data-src="images/logo128x128.png" alt="Cozumel Scoots company logo">
+            </picture>
+            <section class="heading">
+                <h1>Cozumel Scoots</h1>
+                <div class="motto">Rent and Ride</div>
+            </section>
+        
+        </header>
+
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776; Menu</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li class="active"><a href="reservations.html">Reservations</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+    <main>
+
+        <h2 class="title">Cozumel Scoots - Reservations</h2>
+
+        <!-- Slideshow container -->
+        <div class="rentalImage slideshow-container">
+            <picture class="rentalImg img">
+                <source media="(max-width: 655px)" srcset="images/placeholder.png" data-srcset="images/reserve307x149.jpg">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/reserve614x298.jpg">
+                <img src="images/placeholder.png" data-src="images/reserve880x428.jpg" alt="reservations banner">
+                
+            </picture>
+        </div>
+
+        <section class="res-form beachBkgImg">
+        <h2 class="form-name">Rental Agreement</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" minlength="5" required pattern="[a-zA-Z]+[ ][a-zA-Z]+"></label>
+                <label class="top">Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+                <label class="top">Home state/country*<input type="text" name="country" required></label>
+                <label class="top">Cruise line (if applicable)<input type="text" name="cline"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Information</legend>
+                <label class="top">First day of rental<input type="date" name="fdate"></label>
+                <label class="top">Last day of rental<input type="date" name="ldate"></label>
+
+
+                <label class="top" for="renttype" id="types">Rental Type
+                    <input name="renttype" list="vehicletype" id="rtype">
+                
+                <datalist id="vehicletype">
+                    <option value="Honda Metro Scooter (1 person)"></option>
+                    <option value="Honda Dio Scooter (2 people)"></option>
+                    <option value="Honda PCX150 Scooter (2 people)"></option>
+                    <option value="Honda Pioneer ATV (4 people)"></option>
+                    <option value="Jeep Wrangler - 4 door with a/c (5 people)"></option>
+                    <option value="Jeep Wrangler - 2 door (4 people)"></option>
+                </datalist>
+                </label>
+            
+            
+
+                <label class="top" for="addinfo">Additional Information and Comments<br>
+                <textarea id="addinfo" name="addinfo" rows="5" cols="35"></textarea></label>
+            <input type="submit" value="Reserve Rental" class="submitbutton">
+    
+        </form>
+        </section>
+
+
+        <br>
+
+        <div class="contact">
+            <picture class="img map">
+                <img src="images/placeholder.png" data-src="images/map.png" alt="map of places" class="map">
+            </picture>
+            <div class="location"><strong>Cozumel Scoots</strong>
+                <span class="address">&#127980; Carretera Costera Km 171782</span>
+                <span class="phone">&#128222; +52-999-8989898</span>
+                <span class="email">&#128231; CozumelScootsAdventure@ttr.com</span>
+                <div class="social">
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="lastInfo">
+                &#169; Cozumel Scoots | Attributions |<br class='responsive'> Erica Kennington
+                <div id="updated"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/lazyload.js"></script>
+
+</body>
+</html>

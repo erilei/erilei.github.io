@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Sarala');
+
 :root{
     --primary-color: #E4572E; /*Flame */
     --secondary-color: #29335C; /*Space Cadet (navy)*/
@@ -37,6 +39,9 @@ h2{
     font-family: var(--heading-font);
     font-size: 25px;
 }
+ p {
+     font-family: var(--paragraph-font);
+ }
 
 
 /*------header/footer items------*/
@@ -74,11 +79,15 @@ div.motto {
     text-align: center;
     padding: 1em;
     font-size: 20px;
+    margin: 0;
 }
 h2.weather-head{
     font-size: 20px;
     text-decoration: underline;
     text-align: center;
+}
+.underline{
+    text-decoration: underline;
 }
 .contact {
     background: #FADB9E; /*peach*/
@@ -146,11 +155,35 @@ div.backgroundImg {
     height: 636px;
     width: 100%;
 }
+section.beachBkgImg {
+    background-image: url('../images/beachumbrella.small.jpg');
+    height: 100%;
+    width: 100%;
+}
+
+div.opacityImg {
+    background-image: url('../images/shoreline.jpg');
+    width: 100%;
+    height: 550px;
+}
+
+
 .summaryRentals ul li {
     font-family: var(--paragraph-font);
     text-align: center;
     list-style: none;
 }
+.attraction-lesson {
+    text-align: center;
+}
+.learn-more {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*-----table-----*/
+
+
 
 
 
@@ -240,13 +273,15 @@ nav {
     line-height: 50px;
     border-top: 2px solid var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
+    position: relative;
+    bottom: 0;
 }
 nav ul {
     list-style: none;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
     background: var(--secondary-color);
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 nav a:link, nav a:visited {
     color: var(--background-color);
@@ -284,6 +319,104 @@ nav a:hover {
     font-family: var(--paragraph-font);
 }
 
+/*--------form---------*/
+
+.res-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+h2.form-name {
+    padding-left: 2em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--paragraph-font);
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-color);
+    padding: .5rem 2%;
+    border: none;
+}
+form legend{
+    color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+form label.top {
+    display: block;
+    padding: 1rem;
+    color: navy;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkid-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+form label.sbs {
+    display: block;
+    padding:.75rem;
+    color: black;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+form input{
+    padding: .5rem;
+}
+form select {
+    padding: .75rem;
+}
+form input.submitbutton {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+p.thanks {
+    text-align: center;
+    
+}
+
+
+.contact-form {
+    max-width: 647px;
+    border: 3px solid black;
+    background-image: url('../images/shipsea.jpg');
+    margin: 0 auto;
+}
+.maps {
+    border: 3px solid black;
+    max-width: 647px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #F6C5B7;
+}
+p.first, p.second {
+    text-align: center;
+    padding: 1em;
+}
+.whatBox {
+    text-align: center;
+}
 
 
 
