@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Nunito');
+
+:root{
+    --primary-color: #FFFFFF; /*White */
+    --secondary-color: #1E325C; /*Navy */
+    --accent1-color: #CCCCCC; /*Grey */
+    --accent2-color: #FCA311; /*Orange */
+
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Nunito', sans-serif;
+}
+
+html {
+    background-color: var(--primary-color);
+}
+main {
+    margin: 1em;
+}
+
+/*-------Image------*/
+img.portrait {
+    margin: 0.75em;
+}
+figcaption {
+    font-family: var(--paragraph-font);
+}
+gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*---------Headings--------- */
+header, footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 1em;
+    color: var(--accent1-color);
+}
+footer div {
+    font-family: var(--paragraph-font);
+}
+p, li {
+    font-family: var(--paragraph-font);
+}
+h1, h2{
+    font-family: var(--heading-font);
+}
+h1.myName {
+    margin-bottom: 0;
+}
+h2.secondaryHead {
+    font-size: small;
+    font-weight: 300;
+}
+h2.nameHead {
+    font-family: var(--heading-font);
+    border-bottom: 1.5px solid var(--secondary-color);
+}
+h2.nameHead::before{
+    content:"\A\A";
+    white-space: pre;
+}
