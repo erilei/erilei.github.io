@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Gallery</title>
+    <meta name="description" content="Weather page for Preston, Idaho. Class: WDD230 at BYU-Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+<body>
+    <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <picture class="card-img">
+            <source media="(max-width: 640px)" srcset="images/logo83.png">
+            <source media="(max-width: 1104px)" srcset="images/logo111.png">
+            <img src="images/placeholder.png" data-src="images/logo128.png" alt="logo">
+        </picture>
+            <section class="heading">
+            <h1>Climate Compound</h1>
+            <div class="moto">Where weather is life</div>
+            </section>
+        
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../lesson9/index.html">Home</a></li>
+                <li><a href="../lesson10/preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2 class="left-align">Weather Gallery</h2>
+
+        <div class="container">
+            <div class="card">
+                <picture class="card-img">
+                        <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/birdtree256x177.jpg">
+                        <source media="(max-width: 1104px)" srcset="images/placeholder.png" data-srcset="images/birdtree280x420.jpg">
+                        <img src="images/placeholder.png" data-src="images/birdtree340x430.jpg" alt="bird tree" style="width:auto;">
+                </picture>
+                <p>Birds and trees</p>
+            </div>
+            
+            <div class="card">
+                <picture class="card-img">
+                    <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/holyray256x177.jpg">
+                    <source media="(max-width: 1104px)" srcset="images/placeholder.png" data-srcset="images/holyray280x420.jpg">
+                    <img src="images/placeholder.png" data-src="images/holyray340x430.jpg" alt="holy ray" style="width:auto;">
+                </picture>
+                <p>Holy ray</p>
+            </div>
+
+            <div class="card">
+                <picture class="card-img">
+                    <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/raintree256x177.jpg">
+                    <source media="(max-width: 1104px)" srcset="images/placeholder.png" data-srcset="images/raintree280x420.jpg">
+                    <img src="images/placeholder.png" data-src="images/raintree340x430.jpg" alt="rain tree" style="width:auto;">
+                </picture>
+                <p>Rain tree</p>
+            </div>
+
+            <div class="card">
+                <picture class="card-img">
+                    <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/snowtree256x177.jpg">
+                    <source media="(max-width: 1104px)" srcset="images/placeholder.png" data-srcset="images/snowtree280x420.jpg">
+                    <img src="images/placeholder.png" data-src="images/snowtree340x430.jpg" alt="snow tree" style="width:auto;">
+                </picture>
+                <p>Snow tree</p>
+            </div>
+
+            <div class="card">
+                <picture class="card-img">
+                    <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/suncloud256x177.jpg">
+                    <source media="(max-width: 1104px)" srcset="images/placeholder.png" data-srcset="images/suncloud280x420.jpg">
+                    <img src="images/placeholder.png" data-src="images/suncloud340x430.jpg" alt="sun cloud" style="width:auto;">
+                </picture>
+                <p>Sun and clouds</p>
+            </div>
+
+            <div class="card">
+                <picture class="card-img">
+                    <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/windrain256x177.jpg">
+                    <source media="(max-width: 1104px)" srcset="images/placeholder.png" data-srcset="images/windrain280x420.jpg">
+                    <img src="images/placeholder.png" data-src="images/windrain340x430.jpg" alt="windmill and rainbow" style="width:auto;">
+                </picture>
+                <p>Windmill and Rainbow</p>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="lastInfo">
+                &#169; Climate Compound | Attributions |<br class='responsive'> Erica Kennington
+                <div id="updated"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lesson7.js"></script>
+    <script src="js/gallery.js"></script>
+
+</body>
+</html>
